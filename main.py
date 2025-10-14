@@ -1,10 +1,14 @@
-from fastapi import FastAPI,Query, HTTPException
+#import json
+import os
+
+from fastapi import FastAPI,Query
 import uvicorn
 
+from evaluation.general import general_router
 from models.Available_coin_analysis import available_coin_search
 # --- Analysis Functions ---
 from models.News_handler import analyze_discord_news_sentiment
-
+from evaluation.news import router as eval_news_router
 from models.coin_find_and_sentiment import analyze_verified_coin_sentiment_flow
 from models.coin_finder import extract_coin_keywords_from_ner
 from models.coinflow_Analysis import analyze_coin_flow_analysis
@@ -24,6 +28,9 @@ app = FastAPI(
     version="1.0.0"
 )
 
+APP_ROOT = os.path.dirname(__file__)
+TEST_DATA_DIR = os.path.join(APP_ROOT, "test data")
+os.makedirs(TEST_DATA_DIR, exist_ok=True)
 # ============================
 # Sentiment Analysis Endpoints
 # ============================
@@ -91,7 +98,8 @@ async def coin_sentiment(
 def get_news_summary():
     analyze_discord_news_sentiment()
     return get_news_sentiment_summary()
-
+app.include_router(eval_news_router)   # this adds POST /evaluate/news to Swagger
+app.include_router(general_router)
 @app.get("/general-sentiment-summary", tags=["Summary"])
 def get_general_summary():
     analyze_general_tweet_sentiment()
