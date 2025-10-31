@@ -18,7 +18,7 @@ def remove_emojis(text):
 
 # === Paths ===
 base_dir = os.path.dirname(__file__)
-input_file_path = os.path.join(base_dir, "..", "test data", "preprocessed_data_run_coinfinder_focus.json")
+input_file_path = os.path.join(base_dir, "..", "test_data", "preprocessed_data_run_coinfinder_focus.json")
 
 # === Load data ===
 with open(input_file_path, "r", encoding="utf-8") as f:
@@ -61,7 +61,7 @@ for line in raw_lines:
     output_lines.append(formatted)
 
 # === Save output ===
-output_file_path = os.path.join(base_dir, "..", "test data", "Analysis_output_for_coin_flow_asqww.json")
+output_file_path = os.path.join(base_dir, "..", "test_data", "Analysis_output_for_coin_flow_asqww.json")
 with open(output_file_path, "w", encoding="utf-8") as f:
     json.dump(output_lines, f, ensure_ascii=False, indent=2)
 

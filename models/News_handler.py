@@ -24,7 +24,7 @@ import seaborn as sns
 
 BASE_DIR = os.path.dirname(__file__)
 ROOT_DIR = os.path.abspath(os.path.join(BASE_DIR, ".."))
-TEST_DATA_DIR = os.path.join(ROOT_DIR, "test data")
+TEST_DATA_DIR = os.path.join(ROOT_DIR, "test_data")
 os.makedirs(TEST_DATA_DIR, exist_ok=True)
 
 # Canonical FinBERT label order

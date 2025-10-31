@@ -2,9 +2,9 @@
 import json, os
 from collections import defaultdict
 
-SNAP_IN   = "test data/rag_snapshots.jsonl"
-SNAP_OUT  = "test data/rag_snapshots_labeled.jsonl"
-PRICES    = "test data/ohlc.json"  # {"BTC": [{"ts":unix, "close":...}, ...], ...}
+SNAP_IN   = "test_data/rag_snapshots.jsonl"
+SNAP_OUT  = "test_data/rag_snapshots_labeled.jsonl"
+PRICES    = "test_data/ohlc.json"  # {"BTC": [{"ts":unix, "close":...}, ...], ...}
 
 def nearest_future(ts_list, ts):
     # find next timestamp > ts; assume ts_list sorted

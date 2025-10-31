@@ -12,8 +12,8 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 def analyze_coin_flow_analysis():
     # === Step 1: Define file paths and fetch messages ===
     #channel_type = "focus_based"
-    #raw_json_file = os.path.join(base_dir, "..", "test data", "preprocessed_data1.json")
-    output_json_file = os.path.join(base_dir, "..", "test data", "Analysis_output_for_coin_flow_a.json")
+    #raw_json_file = os.path.join(base_dir, "..", "test_data", "preprocessed_data1.json")
+    output_json_file = os.path.join(base_dir, "..", "test_data", "Analysis_output_for_coin_flow_a.json")
 
     #fetch_discord_messages(channel_type, raw_json_file)
     #preprocessed_path = run_coinflow_focus(input_path=raw_json_file)
@@ -66,7 +66,7 @@ def analyze_coin_flow_analysis():
     print(f"Coin flow analysis saved to {output_json_file}")
 
     # === Step 6: Generate charts per coin ===
-    chart_dir = os.path.join(base_dir, "..", "test data", "charts1")
+    chart_dir = os.path.join(base_dir, "..", "test_data", "charts1")
     for coin, flows in coin_data.items():
         save_coin_chart(coin, flows, chart_dir)
 

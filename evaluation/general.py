@@ -7,21 +7,21 @@ import os
 from models.general_handler import analyze_general_tweet_sentiment
 
 APP_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-TEST_DATA_DIR = os.path.join(APP_ROOT, "test data")
+TEST_DATA_DIR = os.path.join(APP_ROOT, "test_data")
 os.makedirs(TEST_DATA_DIR, exist_ok=True)
 
 # ---------- Schemas ----------
 class GeneralEvalRequest(BaseModel):
     gt_path: str = Field(
-        default=r"C:\Users\visal\PycharmProjects\Sentimnet_analysis\test data\sentiment_output_general.json",
+        default=r"C:\Users\visal\PycharmProjects\Sentimnet_analysis\test_data\sentiment_output_general.json",
         description=("Ground-truth file (.json/.csv). Accepts {text:label}, "
                      "[{text,label}], [{text,predicted_label}], or index-aligned list."),
-        examples=[r"C:\Users\visal\PycharmProjects\Sentimnet_analysis\test data\sentiment_output_general.json"],
+        examples=[r"C:\Users\visal\PycharmProjects\Sentimnet_analysis\test_data\sentiment_output_general.json"],
     )
     use_preprocessed_json_path: Optional[str] = Field(
-        default=r"C:\Users\visal\PycharmProjects\Sentimnet_analysis\test data\preprocessed_data_general.json",
+        default=r"C:\Users\visal\PycharmProjects\Sentimnet_analysis\test_data\preprocessed_data_general.json",
         description="Preprocessed JSON array of texts for the 'general' channel.",
-        examples=[r"C:\Users\visal\PycharmProjects\Sentimnet_analysis\test data\preprocessed_data_general.json"],
+        examples=[r"C:\Users\visal\PycharmProjects\Sentimnet_analysis\test_data\preprocessed_data_general.json"],
     )
     channel_type: Optional[str] = Field(
         default="general",

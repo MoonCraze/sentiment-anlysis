@@ -2,7 +2,7 @@ import os
 import json
 
 base_dir = os.path.dirname(__file__)
-news_sentiment_file = os.path.join(base_dir, "..", "test data", "sentiment_output_for_news.json")
+news_sentiment_file = os.path.join(base_dir, "..", "test_data", "sentiment_output_for_news.json")
 
 def get_news_sentiment_summary():
     try:

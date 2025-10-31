@@ -62,7 +62,7 @@ with open("../raw_focus_messages1/coin_flow_data.json", "w") as outfile:
 
 print("Data has been processed and saved to coin_flow_data.json")
 
-chart_dir = os.path.join(base_dir, "..", "test data", "charts")
+chart_dir = os.path.join(base_dir, "..", "test_data", "charts")
 for coin, flows in coin_data.items():
     save_coin_chart(coin, flows, chart_dir)
 

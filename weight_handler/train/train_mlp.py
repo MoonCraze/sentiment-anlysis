@@ -8,7 +8,7 @@ from weight_handler.models.rag_dynamic import SimpleWeightMLP, FEATURE_DIM
 
 #from models.rag_dynamic import SimpleWeightMLP, FEATURE_DIM
 
-SNAP_PATH = "test data/rag_snapshots_labeled.jsonl"  # same rows but 'label' filled
+SNAP_PATH = "test_data/rag_snapshots_labeled.jsonl"  # same rows but 'label' filled
 SAVE_DIR  = "ml_models"; os.makedirs(SAVE_DIR, exist_ok=True)
 
 class SnapDS(Dataset):

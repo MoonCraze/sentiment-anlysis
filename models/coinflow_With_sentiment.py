@@ -16,8 +16,8 @@ def analyze_coin_flow_and_sentiment():
 
     # === Step 2: Define file paths and fetch messages ===
     channel_type = "focus_based"
-    raw_json_file = os.path.join(base_dir, "..", "test data", "raw_focus_messages.json")
-    output_json_file = os.path.join(base_dir, "..", "test data", "sentiment_output_for_coin_finder.json")
+    raw_json_file = os.path.join(base_dir, "..", "test_data", "raw_focus_messages.json")
+    output_json_file = os.path.join(base_dir, "..", "test_data", "sentiment_output_for_coin_finder.json")
 
     fetch_discord_messages(channel_type, raw_json_file)
     preprocessed_path = run_preprocessing_focus(input_path=raw_json_file)

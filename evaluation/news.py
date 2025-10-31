@@ -7,19 +7,19 @@ import os
 from models.News_handler import analyze_discord_news_sentiment
 
 APP_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-TEST_DATA_DIR = os.path.join(APP_ROOT, "test data")
+TEST_DATA_DIR = os.path.join(APP_ROOT, "test_data")
 os.makedirs(TEST_DATA_DIR, exist_ok=True)
 
 class NewsEvalRequest(BaseModel):
     gt_path: str = Field(
-        default=r"C:\Users\visal\PycharmProjects\Sentimnet_analysis\test data\sentiment_output_for_news.json",
+        default=r"C:\Users\visal\PycharmProjects\Sentimnet_analysis\test_data\sentiment_output_for_news.json",
         description="Ground-truth file (.json/.csv). Accepts {text:label}, [{text,label}], [{text,predicted_label}], or index-aligned list.",
-        examples=[r"C:\Users\visal\PycharmProjects\Sentimnet_analysis\test data\sentiment_output_for_news.json"],
+        examples=[r"C:\Users\visal\PycharmProjects\Sentimnet_analysis\test_data\sentiment_output_for_news.json"],
     )
     use_preprocessed_json_path: Optional[str] = Field(
-        default=r"C:\Users\visal\PycharmProjects\Sentimnet_analysis\test data\preprocessed_data_news.json",
+        default=r"C:\Users\visal\PycharmProjects\Sentimnet_analysis\test_data\preprocessed_data_news.json",
         description="Preprocessed JSON array of texts.",
-        examples=[r"C:\Users\visal\PycharmProjects\Sentimnet_analysis\test data\preprocessed_data_news.json"],
+        examples=[r"C:\Users\visal\PycharmProjects\Sentimnet_analysis\test_data\preprocessed_data_news.json"],
     )
     channel_type: Optional[str] = Field(
         default="news",

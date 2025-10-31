@@ -1,17 +1,18 @@
-# models/Availble_coin_analysis.py
-import os, io, base64, json, inspect, asyncio
-from typing import Dict, Any
+# models/Available_coin_analysis.py
+import os, io, base64, json, asyncio, inspect
+from typing import Dict, Any, List, Optional
+
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+
 import nltk
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
-from twikit import Client
+
+import aiohttp
 from configurations import config
 
-base_dir = os.path.dirname(__file__)
-cookies_path = os.path.abspath(os.path.join(base_dir, "..", "configurations", "cookies.json"))
-
+# ------------------------ utils ------------------------
 def _ensure_vader():
     try:
         SentimentIntensityAnalyzer()
@@ -19,136 +20,16 @@ def _ensure_vader():
         nltk.download("vader_lexicon", quiet=True)
 
 async def _maybe_await(x):
-    if inspect.isawaitable(x):
-        return await x
-    return x
+    return await x if inspect.isawaitable(x) else x
 
-def _get_creds():
-    email = os.getenv("TWIKIT_EMAIL", getattr(config, "TWITTER_EMAIL", None))
-    username = os.getenv("TWIKIT_USERNAME", getattr(config, "TWITTER_USERNAME", None))
-    password = os.getenv("TWIKIT_PASSWORD", getattr(config, "TWITTER_PASSWORD", None))
-    if username and username.startswith("@"):
-        username = username[1:]
-    return email, username, password
-
-async def _twikit_login_and_save(client: Client) -> None:
-    email, username, password = _get_creds()
-    if not all([email, username, password]):
-        raise RuntimeError("Twikit auth missing: set TWIKIT_EMAIL, TWIKIT_USERNAME, TWIKIT_PASSWORD or config.*")
-    os.makedirs(os.path.dirname(cookies_path), exist_ok=True)
-    await _maybe_await(client.login(auth_info_1=email, auth_info_2=username, password=password))
-    await _maybe_await(client.save_cookies(cookies_path))
-
-async def _validate_login(client: Client) -> bool:
-    try:
-        me = await _maybe_await(client.get_me())
-        return bool(me and getattr(me, "id", None))
-    except Exception:
-        return False
-
-async def _load_or_login(client: Client, force_fresh: bool = False) -> None:
-    if force_fresh:
-        try:
-            if os.path.exists(cookies_path): os.remove(cookies_path)
-        except Exception:
-            pass
-
-    # Try load cookies if present & valid JSON
-    if os.path.exists(cookies_path) and os.path.getsize(cookies_path) > 0:
-        try:
-            with open(cookies_path, "r", encoding="utf-8") as f:
-                json.load(f)
-            await _maybe_await(client.load_cookies(cookies_path))
-            if await _validate_login(client):
-                return
-        except Exception:
-            pass  # fall through to fresh login
-
-    # Fresh login
-    await _twikit_login_and_save(client)
-    if not await _validate_login(client):
-        raise RuntimeError("Twikit login failed: credentials may be wrong or 2FA challenge unresolved.")
-
-async def available_coin_search(query: str, max_results: int = 300) -> Dict[str, Any]:
-    _ensure_vader()
-
-    client = Client("en-US")
-    await _load_or_login(client)
-
-    async def _fetch(q: str):
-        return await _maybe_await(client.search_tweet(query=q, product="Latest"))
-
-    # Attempt search; if unauthorized, re-login once and retry
-    try:
-        res = await _fetch(query)
-    except Exception as e:
-        msg = str(e).lower()
-        if "401" in msg or "unauthorized" in msg or "code: 32" in msg:
-            await _load_or_login(client, force_fresh=True)
-            res = await _fetch(query)
-        else:
-            # hard failure
-            return {
-                "query": query, "total_mentions": 0, "positive": 0, "negative": 0,
-                "positive_pct": 0.0, "negative_pct": 0.0, "bar_image_base64": "",
-                "sample_texts": [f"error: {e}"]
-            }
-
-    texts, seen = [], set()
-
-    async def handle_async_iter(it):
-        async for t in it:
-            s = (getattr(t, "text", "") or "").strip()
-            if not s:
-                continue
-            key = s.lower()
-            if key in seen:
-                continue
-            seen.add(key)
-            texts.append(s)
-            if len(texts) >= max_results:
-                break
-
-    def handle_sync_iter(it):
-        for t in (it or []):
-            s = (getattr(t, "text", "") or "").strip()
-            if not s:
-                continue
-            key = s.lower()
-            if key in seen:
-                continue
-            seen.add(key)
-            texts.append(s)
-            if len(texts) >= max_results:
-                break
-
-    # Twikit can return sync/async iterables
-    if hasattr(res, "__aiter__"):
-        await handle_async_iter(res)
-    else:
-        handle_sync_iter(res)
-
-    # If nothing came back, avoid showing a scary auth blob if the library puts it in 'text'
-    texts = [t for t in texts if "Could not authenticate you" not in t]
-
-    # --- sentiment ---
-    sia = SentimentIntensityAnalyzer()
-    pos = neg = 0
-    for s in texts:
-        c = sia.polarity_scores(s)["compound"]
-        if c > 0.25: pos += 1
-        elif c < -0.25: neg += 1
-
-    total = len(texts)
-    pos_pct = round(100 * pos / total, 2) if total else 0.0
-    neg_pct = round(100 * neg / total, 2) if total else 0.0
-
-    # --- chart ---
+def _mk_bar_b64(pos: int, neg: int, total: int) -> str:
     fig, ax = plt.subplots(figsize=(8, 0.9), dpi=100)
     ax.axis("off")
     fig.patch.set_facecolor("#111827"); ax.set_facecolor("#111827")
-    pos_w = (pos / total) if total else 0
-    neg_w = (neg / total) if total else 0
+    pos_w = (pos / total) if total else 0.0
+    neg_w = (neg / total) if total else 0.0
+    pos_pct = round(100 * pos_w, 2)
+    neg_pct = round(100 * neg_w, 2)
     ax.barh([0], [pos_w], left=0, height=0.5)
     ax.barh([0], [neg_w], left=pos_w, height=0.5)
     ax.text(0, 0.85, f"{pos_pct:.2f}%", va="center", ha="left", fontsize=14)
@@ -158,7 +39,238 @@ async def available_coin_search(query: str, max_results: int = 300) -> Dict[str,
     buf = io.BytesIO(); plt.tight_layout(pad=1.0)
     fig.savefig(buf, format="png", bbox_inches="tight", facecolor=fig.get_facecolor())
     plt.close(fig)
-    bar_b64 = "data:image/png;base64," + base64.b64encode(buf.getvalue()).decode("utf-8")
+    return "data:image/png;base64," + base64.b64encode(buf.getvalue()).decode("utf-8")
+
+# --------------------  SocialData Tools client --------------------
+SOCIALDATA_BASE = "https://api.socialdata.tools"
+
+def _get_socialdata_key() -> str:
+    # Prefer env or config; fallback to the provided key
+    return (
+        os.getenv("SOCIALDATA_API_KEY")
+        or getattr(config, "SOCIALDATA_API_KEY", None)
+        or "3627|tQe9teqve9V3bpR7lmqe48dPLGeqMHnSN5egMk7S0dbe417f"
+    )
+
+# Optional defaults (override in configurations/config.py if you want)
+DEFAULT_SEARCH_TYPE = getattr(config, "SOCIALDATA_DEFAULT_TYPE", "Latest")  # "Latest" or "Top"
+DEFAULT_LANG = getattr(config, "SOCIALDATA_LANG", None)  # e.g., "en" or None
+
+async def _socialdata_fetch_tweet_by_id(session: aiohttp.ClientSession, tweet_id: str) -> Optional[dict]:
+    """
+    GET /twitter/tweets/{id} → single tweet details (contains full_text/text, counts, user, etc).
+    """
+    url = f"{SOCIALDATA_BASE}/twitter/tweets/{tweet_id}"
+    headers = {"Authorization": f"Bearer {_get_socialdata_key()}", "Accept": "application/json"}
+    timeout = aiohttp.ClientTimeout(total=30)
+    async with session.get(url, headers=headers, timeout=timeout) as resp:
+        if resp.status != 200:
+            _ = await resp.text()
+            return None
+        try:
+            return await resp.json()
+        except Exception:
+            return None
+
+async def _socialdata_search_texts(
+    session: aiohttp.ClientSession,
+    query: str,
+    cap: int,
+    search_type: str = "Latest",
+    lang: Optional[str] = None,
+) -> List[str]:
+    """
+    GET /twitter/search?query=...&type=Latest|Top with pagination via next_cursor until `cap` is reached.
+    If `lang` is set and not already present as an operator in the query (lang:xx), pass it as a param.
+    """
+    headers = {"Authorization": f"Bearer {_get_socialdata_key()}", "Accept": "application/json"}
+    endpoint = f"{SOCIALDATA_BASE}/twitter/search"
+
+    texts: List[str] = []
+    seen: set = set()
+    cursor: Optional[str] = None
+
+    # Whether the query already constrains language (operator like "lang:en")
+    q_has_lang = " lang:" in (" " + (query or "").lower())
+
+    while len(texts) < cap:
+        params = {"query": query, "type": search_type}
+        if cursor:
+            params["cursor"] = cursor
+        if lang and not q_has_lang:
+            params["lang"] = lang
+
+        timeout = aiohttp.ClientTimeout(total=40)
+        async with session.get(endpoint, headers=headers, params=params, timeout=timeout) as resp:
+            body = await resp.text()
+            if resp.status != 200:
+                # stop on error; return what we have so far
+                break
+            try:
+                data = json.loads(body)
+            except Exception:
+                break
+
+            # Be defensive about possible payload shapes
+            page = data.get("tweets") or data.get("data") or data.get("statuses") or []
+            if not isinstance(page, list):
+                break
+
+            for t in page:
+                s = (t.get("full_text") or t.get("text") or "").strip()
+                if not s:
+                    continue
+                k = s.lower()
+                if k not in seen:
+                    seen.add(k)
+                    texts.append(s)
+                if len(texts) >= cap:
+                    break
+
+            cursor = data.get("next_cursor")
+            if not cursor or not page:
+                break
+
+    return texts[:cap]
+
+def _parse_ids_query(query: str) -> List[str]:
+    """
+    Accept patterns like:
+      ids:1549281861687451648
+      ids:1549281861687451648,1729591119699124560
+      ids:1549281861687451648 1729591119699124560
+    Returns a list of digit-only strings.
+    """
+    q = (query or "").strip()
+    if not q.lower().startswith("ids:"):
+        return []
+    raw = q.split(":", 1)[1].strip()
+    parts = [p.strip() for p in raw.replace(",", " ").split()]
+    return [p for p in parts if p.isdigit()]
+
+async def _socialdata_get_texts_from_ids(session: aiohttp.ClientSession, ids: List[str], cap: int) -> List[str]:
+    texts: List[str] = []
+    seen: set = set()
+    for tid in ids:
+        if len(texts) >= cap:
+            break
+        data = await _socialdata_fetch_tweet_by_id(session, tid)
+        if not data:
+            continue
+        s = (data.get("full_text") or data.get("text") or "").strip()
+        if not s:
+            continue
+        k = s.lower()
+        if k not in seen:
+            seen.add(k)
+            texts.append(s)
+    return texts[:cap]
+
+# ---- fallback orchestrator for keyword search ----
+async def _search_with_fallbacks(
+    session: aiohttp.ClientSession,
+    query: str,
+    cap: int,
+    preferred_type: str,
+    preferred_lang: Optional[str],
+) -> (List[str], Optional[str]):
+    """
+    Returns (texts, debug_note). Tries several strategies:
+      1) preferred_type + preferred_lang
+      2) opposite_type + preferred_lang
+      3) preferred_type + no lang
+      4) opposite_type + no lang
+    """
+    debug_note = None
+    types = [preferred_type, "Top" if preferred_type == "Latest" else "Latest"]
+
+    # first try with language (if any)
+    for t in types:
+        texts = await _socialdata_search_texts(session, query, cap, search_type=t, lang=preferred_lang)
+        if texts:
+            return texts, None
+
+    # then try without language
+    for t in types:
+        texts = await _socialdata_search_texts(session, query, cap, search_type=t, lang=None)
+        if texts:
+            return texts, None
+
+    debug_note = f"no results for query='{query}' with fallbacks (types tried: {types}, lang tried: {preferred_lang} and None)"
+    return [], debug_note
+
+# --------------------  Resolver (keeps original function name) --------------------
+async def _twitterapi_advanced_search(
+    session: aiohttp.ClientSession,
+    query: str,
+    max_results: int,
+    since: Optional[str] = None,
+    until: Optional[str] = None,
+    lang: Optional[str] = None,
+    user_id: Optional[str] = None,
+) -> List[str]:
+    """
+    Re-purposed to SocialData:
+      - If query starts with 'ids:', fetch those tweets by ID via SocialData Tools.
+      - Else, treat 'query' as a keyword/X-operator search and call /twitter/search
+        with robust fallbacks across Latest/Top and with/without lang.
+    """
+    # 1) Explicit IDs
+    ids = _parse_ids_query(query)
+    if ids:
+        return await _socialdata_get_texts_from_ids(session, ids, max_results)
+
+    # 2) Keyword / operator search with fallbacks
+    preferred_type = DEFAULT_SEARCH_TYPE if DEFAULT_SEARCH_TYPE in ("Latest", "Top") else "Latest"
+    preferred_lang = lang if lang else DEFAULT_LANG
+    texts, note = await _search_with_fallbacks(
+        session=session,
+        query=query,
+        cap=max_results,
+        preferred_type=preferred_type,
+        preferred_lang=preferred_lang,
+    )
+    if not texts and note:
+        # Return a helpful message as a single "text" so upstream UI isn't blank.
+        return [f"[debug] {note}"]
+    return texts
+
+# ------------------------ public entrypoint ------------------------
+async def available_coin_search(query: str, max_results: int = 300) -> Dict[str, Any]:
+    """
+    Fetch tweets via SocialData Tools (by tweet IDs or keyword search), run VADER sentiment,
+    and return summary + bar image (base64).
+    """
+    _ensure_vader()
+
+    async with aiohttp.ClientSession() as session:
+        try:
+            texts = await _twitterapi_advanced_search(
+                session=session,
+                query=query,
+                max_results=max_results,
+                lang=None,   # or pass DEFAULT_LANG if you want to lock language globally
+                user_id=None,
+            )
+        except Exception as e:
+            return {
+                "query": query, "total_mentions": 0, "positive": 0, "negative": 0,
+                "positive_pct": 0.0, "negative_pct": 0.0, "bar_image_base64": "",
+                "sample_texts": [f"error: {e}"]
+            }
+
+    # --- sentiment ---
+    sia = SentimentIntensityAnalyzer()
+    pos = neg = 0
+    for s in texts:
+        c = sia.polarity_scores(s)["compound"]
+        if c > 0.25: pos += 1
+        elif c < -0.25: neg += 1
+
+    total = pos + neg
+    pos_pct = round(100 * pos / total, 2) if total else 0.0
+    neg_pct = round(100 * neg / total, 2) if total else 0.0
+    bar_b64 = _mk_bar_b64(pos, neg, total)
 
     return {
         "query": query,

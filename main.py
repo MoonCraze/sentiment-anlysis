@@ -1,11 +1,20 @@
+#main.py
 #import json
 import os
 
 from fastapi import FastAPI,Query
 import uvicorn
 
+from configurations.config import USE_SCRAPER
 from evaluation.general import general_router
-from models.Available_coin_analysis import available_coin_search
+from models.Available_coin_analysis_scrape import available_coin_search
+
+
+if USE_SCRAPER:
+    from models.Available_coin_analysis_scrape import available_coin_search
+else:
+    from models.Available_coin_analysis import available_coin_search
+
 # --- Analysis Functions ---
 from models.News_handler import analyze_discord_news_sentiment
 from evaluation.news import router as eval_news_router
@@ -20,7 +29,7 @@ from reponse_handler.focus_sentiment_response import get_focus_sentiment_summary
 # --- Response Handlers (Summaries) ---
 from reponse_handler.general_response import get_general_sentiment_summary
 from reponse_handler.news_response import get_news_sentiment_summary
-from weight_handler.rag_system import build_rag_index, rag_top, rag_explain
+from weight_handler.rag_system import build_rag_index, rag_top, rag_explain, ingest_twitter_sentiment_cache
 
 app = FastAPI(
     title="Crypto Sentiment Analysis API",
@@ -29,8 +38,12 @@ app = FastAPI(
 )
 
 APP_ROOT = os.path.dirname(__file__)
-TEST_DATA_DIR = os.path.join(APP_ROOT, "test data")
+TEST_DATA_DIR = os.path.join(APP_ROOT, "test_data")
 os.makedirs(TEST_DATA_DIR, exist_ok=True)
+
+
+
+
 # ============================
 # Sentiment Analysis Endpoints
 # ============================
@@ -125,7 +138,16 @@ def rag_get_top(k: int = Query(10, ge=1, le=50)):
     return {"top": rag_top(k)}
 
 @app.get("/rag/explain", tags=["RAG"])
-def rag_get_explain(coin: str = Query(..., description="Coin or ticker e.g. BTC, $BTC, Bitcoin")):
+async def rag_get_explain(coin: str = Query(..., description="Coin or ticker e.g. BTC, $BTC, Bitcoin"),
+    max_results: int = Query(300, ge=20, le=800)
+):
+    result = await available_coin_search(coin.strip(), max_results=max_results)
+
+    # ✅ Save exact Available-coin tallies for RAG
+    ingest_twitter_sentiment_cache(result)
+
+    # (optional) update RAG immediately so /rag/explain reflects this run
+    build_rag_index()
     if not rag_top(1):
         build_rag_index()
     return rag_explain(coin)

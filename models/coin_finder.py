@@ -39,8 +39,8 @@ def extract_coin_keywords_from_ner():
 
     # === File paths ===
     channel_type = "finder"
-    raw_json_file = os.path.join(base_dir, "..", "test data", "raw_news_messages.json")
-    output_json_file = os.path.join(base_dir, "..", "test data", "coin_keywords_extracted.json")
+    raw_json_file = os.path.join(base_dir, "..", "test_data", "raw_news_messages.json")
+    output_json_file = os.path.join(base_dir, "..", "test_data", "coin_keywords_extracted.json")
 
     # === Fetch and preprocess ===
     fetch_discord_messages(channel_type, raw_json_file)

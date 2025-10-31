@@ -2,7 +2,7 @@ import os
 import json
 
 base_dir = os.path.dirname(__file__)
-focus_sentiment_file = os.path.join(base_dir, "..", "test data", "sentiment_output_for_coin_finder.json")
+focus_sentiment_file = os.path.join(base_dir, "..", "test_data", "sentiment_output_for_coin_finder.json")
 
 def get_focus_sentiment_summary():
     try:

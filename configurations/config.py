@@ -1,16 +1,49 @@
+# configurations/config.py
+
+# ---- TwitterAPI.io (HTTP) ----
+import os
+
+# TwitterAPI.io – Advanced Search
+API_TWITTER_URL = "https://api.twitterapi.io/twitter/tweet/advanced_search"
+API_TWITTER_KEY = "new1_e5939ebde46c41999ecbf519e955cffd"  # or: os.getenv("TWITTERAPI_KEY")
+API_TWITTER_USER_ID = "369346157581733888"                  # optional but helpful for scoped keys
+API_TWITTER_LANG = "en"                                      # optional default filter
+
+# SocialData Tools API key (Bearer)
+SOCIALDATA_API_KEY = "3627|tQe9teqve9V3bpR7lmqe48dPLGeqMHnSN5egMk7S0dbe417f"
+SOCIALDATA_DEFAULT_TYPE = "Latest"   # or "Top"
+SOCIALDATA_LANG = "en"               # or None
+
+LOCAL_TWITTER_API_BASE = "http://127.0.0.3:8000"
+VADER_POS_THRESH = 0.25
+VADER_NEG_THRESH = -0.25
+
+USE_SCRAPER = True
+
+# ---- Discord (as you requested to “put this on the config file”) ----
 CHANNELS = {
     "news": "1388537786650333305",
     "general": "1398911682985594926",
     "focus_based": "1343282779848183944",
-    "finder":"1388537786650333305"
+    "finder": "1388537786650333305",
 }
+
 headers = {
-        "accept-language": "en-US,en;q=0.9",
-        "authorization": "MTM0MzIzMzUzODM1ODc3NTgxOA.GWCvXq.tE9Q5n0RBR6qMLD_yTiRQ-Ogtw4FG9QBa59xPU",  # Replace securely
-        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
-        "x-discord-locale": "en-US",
-        "cookie": "__dcfduid=49abb8400f0015eda5e6a635b2344b6a; __sdcfduid=494bb8400f0011eda5e6a635b2344b6a298b870d23dc4dc4dc2ed47448ff82791438eca9542b8ddd0aec833c93404851;"
-    }
-TWITTER_EMAIL = "aylan.harlen@doodrops.org"
-TWITTER_PASSWORD = "072.project"
-TWITTER_USERNAME = "@aylan7496042637"
+    "accept-language": "en-US,en;q=0.9",
+    # ⚠️ Replace securely; prefer an environment variable for this token
+    "authorization": os.getenv(
+        "DISCORD_AUTH",
+        "MTM0MzIzMzUzODM1ODc3NTgxOA.GWCvXq.tE9Q5n0RBR6qMLD_yTiRQ-Ogtw4FG9QBa59xPU"
+    ),
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+    "x-discord-locale": "en-US",
+    "cookie": os.getenv(
+        "DISCORD_COOKIE",
+        "__dcfduid=49abb8400f0015eda5e6a635b2344b6a; __sdcfduid=494bb8400f0011eda5e6a635b2344b6a298b870d23dc4dc4dc2ed47448ff82791438eca9542b8ddd0aec833c93404851;"
+    ),
+}
+
+# ---- Legacy Twikit creds (kept here if other modules still import them) ----
+TWITTER_EMAIL = os.getenv("TWITTER_EMAIL", "aylan.harlen@doodrops.org")
+TWITTER_PASSWORD = os.getenv("TWITTER_PASSWORD", "072.project")
+TWITTER_USERNAME = os.getenv("TWITTER_USERNAME", "@aylan7496042637")

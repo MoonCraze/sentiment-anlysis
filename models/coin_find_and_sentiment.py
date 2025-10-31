@@ -25,7 +25,7 @@ def analyze_verified_coin_sentiment_flow():
     # === Step 1: Run coin extraction and get the path ===
     extract_coin_keywords_from_ner()
 
-    coin_list_file = os.path.join(base_dir, "..", "test data", "coin_keywords_extracted.json")
+    coin_list_file = os.path.join(base_dir, "..", "test_data", "coin_keywords_extracted.json")
 
     with open(coin_list_file, 'r', encoding='utf-8') as f:
         ner_data = json.load(f)
@@ -41,8 +41,8 @@ def analyze_verified_coin_sentiment_flow():
 
     # === Step 2: Fetch and preprocess focused messages ===
     channel_type = "focus_based"
-    raw_json_file = os.path.join(base_dir, "..", "test data", "raw_focus_messages.json")
-    output_json_file = os.path.join(base_dir, "..", "test data", "verified_sentiment_output_focus_group.json")
+    raw_json_file = os.path.join(base_dir, "..", "test_data", "raw_focus_messages.json")
+    output_json_file = os.path.join(base_dir, "..", "test_data", "verified_sentiment_output_focus_group.json")
 
     fetch_discord_messages(channel_type, raw_json_file)
     preprocessed_path = run_preprocessing_focus(input_path=raw_json_file)

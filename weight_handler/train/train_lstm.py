@@ -4,7 +4,7 @@ import torch, torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 from models.rag_dynamic import LSTMWeighting, FEATURE_DIM
 
-SNAP_PATH = "test data/rag_snapshots_labeled.jsonl"
+SNAP_PATH = "test_data/rag_snapshots_labeled.jsonl"
 SAVE_DIR  = "ml_models"; os.makedirs(SAVE_DIR, exist_ok=True)
 T = 7  # sequence length
 
