@@ -258,19 +258,55 @@ async def available_coin_search(query: str, max_results: int = 300) -> Dict[str,
                 "positive_pct": 0.0, "negative_pct": 0.0, "bar_image_base64": "",
                 "sample_texts": [f"error: {e}"]
             }
-
+    clean_texts = [t for t in texts if not str(t).startswith("[debug]")]
     # --- sentiment ---
     sia = SentimentIntensityAnalyzer()
     pos = neg = 0
+
+    positive_texts: List[str] = []
+    negative_texts: List[str] = []
+
     for s in texts:
         c = sia.polarity_scores(s)["compound"]
-        if c > 0.25: pos += 1
-        elif c < -0.25: neg += 1
+        if c > 0.25:
+            pos += 1
+            positive_texts.append(s)
+        elif c < -0.25:
+            neg += 1
+            negative_texts.append(s)
 
     total = pos + neg
     pos_pct = round(100 * pos / total, 2) if total else 0.0
     neg_pct = round(100 * neg / total, 2) if total else 0.0
     bar_b64 = _mk_bar_b64(pos, neg, total)
+
+    max_samples_per_class = 5
+
+    sample_items: List[Dict[str, Any]] = []
+
+    # positive samples (green)
+    for t in positive_texts[:max_samples_per_class]:
+        sample_items.append({
+            "text": t,                 # full_text already handled upstream
+            "sentiment": "positive",
+            "color": "green",          # frontend can map this to style / class
+        })
+
+    # negative samples (red)
+    for t in negative_texts[:max_samples_per_class]:
+        sample_items.append({
+            "text": t,
+            "sentiment": "negative",
+            "color": "red",
+        })
+
+    # If absolutely nothing was found, still return a small debug note
+    if not sample_items and not clean_texts:
+        sample_items.append({
+            "text": "No tweets found for this query.",
+            "sentiment": "none",
+            "color": "gray",
+        })
 
     return {
         "query": query,
@@ -280,5 +316,5 @@ async def available_coin_search(query: str, max_results: int = 300) -> Dict[str,
         "positive_pct": pos_pct,
         "negative_pct": neg_pct,
         "bar_image_base64": bar_b64,
-        "sample_texts": texts[:10],
+        "sample_texts": sample_items,
     }

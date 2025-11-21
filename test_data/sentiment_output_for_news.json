@@ -1,402 +1,702 @@
 [
   {
     "text": "**The Economist (@TheEconomist) / Twitter** Why fluffy, glossy South Korean TV dramas tempt North Koreans to brave the firing squad econ.st/3GqjvQC economist.com/culture/2025/0… Why fluffy, glossy South Korean TV dramas tempt North Koreans to brave the firing squad https://t.co/jOyO35uzTO https://t.co/jGXkb4pbvA — The Economist (@TheEconomist) July 5, 2025 2025-07-05T15:20:09+00:00 @TheEconomist",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 1.2987888112547807e-05,
+    "prob_neutral": 0.9999352693557739,
+    "prob_positive": 5.17777880304493e-05
   },
   {
     "text": "**The Economist (@TheEconomist) / Twitter** These ten charts explain Donald Trump’s “big, beautiful bill”, the most consequential legislation of his second term econ.st/4kFlcrD economist.com/graphic-detail… These ten charts explain Donald Trump’s “big, beautiful bill”, the most consequential legislation of his second term econ.st/4kFlcrD economist.com/graphic-detail… 2025-07-05T15:40:11+00:00 @TheEconomist",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 1.2951829830853967e-06,
+    "prob_neutral": 0.9999756813049316,
+    "prob_positive": 2.302004213561304e-05
   },
   {
     "text": "**CNN (@CNN) / Twitter** A 9-year-old girl has died in the central Texas floods, her mother says. She was one of more than 20 children missing from an area summer camp. Follow live updates. A 9-year-old girl has died in the central Texas floods, her mother says. She was one of more than 20 children missing from an area summer camp. Follow live updates.https://t.co/tyjT8X2u1y — CNN (@CNN) July 5, 2025 2025-07-05T14:47:00+00:00 @CNN",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 0.000979081611149013,
+    "prob_neutral": 0.9988300204277039,
+    "prob_positive": 0.0001908356643980369
   },
   {
     "text": "**The Economist (@TheEconomist) / Twitter** Almost all prominent pro-democracy activists are now either behind bars or in exile. Fears are growing about who is next in the line of fire Almost all prominent pro-democracy activists are now either behind bars or in exile. Fears are growing about who is next in the line of fire https://t.co/0IrnIi27u8 — The Economist (@TheEconomist) July 5, 2025 2025-07-05T15:00:00+00:00 @TheEconomist",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 0.0033549931831657887,
+    "prob_neutral": 0.994398295879364,
+    "prob_positive": 0.002246713265776634
   },
   {
     "text": "**BBC News (World) (@BBCWorld) / Twitter** US aid workers wounded, says Gaza Humanitarian Foundation US aid workers wounded, says Gaza Humanitarian Foundation https://t.co/xAJcS8sZuw — BBC News (World) (@BBCWorld) July 5, 2025 2025-07-05T14:35:00+00:00 @BBCWorld",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 1.0186603503825609e-05,
+    "prob_neutral": 0.9999295473098755,
+    "prob_positive": 6.0288712120382115e-05
   },
   {
     "text": "**The Economist (@TheEconomist) / Twitter** Shia religious leadership is looking doddery. Traditionally, Shias follow their marjas, or sources of authority, unquestioningly. But the two leading ayatollahs are old men whose influence is rapidly waning economist.com/middle-east-an… Shia religious leadership is looking doddery. Traditionally, Shias follow their marjas, or sources of authority, unquestioningly. But the two leading ayatollahs are old men whose influence is rapidly waning https://t.co/4dWmMlgfhQ — The Economist (@TheEconomist) July 5, 2025 2025-07-05T14:20:12+00:00 @TheEconomist",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 4.003813501185505e-06,
+    "prob_neutral": 0.9999879598617554,
+    "prob_positive": 8.031271136133e-06
   },
   {
     "text": "**The Economist (@TheEconomist) / Twitter** Local officials wrestle with competing incentives because higher economic growth improves their chances of promotion economist.com/china/2025/07/… Local officials wrestle with competing incentives because higher economic growth improves their chances of promotion economist.com/china/2025/07/… 2025-07-05T14:40:10+00:00 @TheEconomist",
-    "dominant_sentiment": "POSITIVE"
+    "predicted_label": "POSITIVE",
+    "prob_negative": 8.819530989967461e-07,
+    "prob_neutral": 0.00031102538923732936,
+    "prob_positive": 0.9996881484985352
   },
   {
     "text": "**BBC News (World) (@BBCWorld) / Twitter** RT by @BBCWorld: More than 20 people arrested after London protest in support of banned group Palestine Action, police say bbc.in/4kncTQM More than 20 people arrested after London protest in support of banned group Palestine Action, police say https://t.co/7q2XCnqImb — BBC Breaking News (@BBCBreaking) July 5, 2025 2025-07-05T14:26:39+00:00 @BBCBreaking",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 1.4701192412758246e-05,
+    "prob_neutral": 0.9999566078186035,
+    "prob_positive": 2.8771679353667423e-05
   },
   {
     "text": "**The Crypto Radar NewStand (@JONDONI_CRYPTO) / Twitter** \"Mysterious Whale Transfers $8.6B In Bitcoin\"#Ethereum #Bitcoin#XRP #Solana #Ondo #Cronos#Binance #Picoin #Cardano#Litecoin #Finance #CryptoNews \"Mysterious Whale Transfers $8.6B In Bitcoin\"#Ethereum #Bitcoin#XRP #Solana #Ondo #Cronos#Binance #Picoin #Cardano#Litecoin #Finance #CryptoNews https://t.co/gWAxFZU0FX — The Crypto Radar NewStand (@JONDONI_CRYPTO) July 5, 2025 2025-07-05T13:51:00+00:00 @JONDONI_CRYPTO",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 1.194144232385952e-07,
+    "prob_neutral": 0.9999984502792358,
+    "prob_positive": 1.4300196653493913e-06
   },
   {
     "text": "**The Crypto Radar NewStand (@JONDONI_CRYPTO) / Twitter** \"Robinhood’s 24/7 tokenization push threatens NYSE revenues: Galaxy Digital\"#Ethereum #Bitcoin#XRP #Solana #Ondo #Cronos#Binance #Picoin #Cardano#Litecoin #Finance #CryptoNews \"Robinhood’s 24/7 tokenization push threatens NYSE revenues: Galaxy Digital\"#Ethereum #Bitcoin#XRP #Solana #Ondo #Cronos#Binance #Picoin #Cardano#Litecoin #Finance #CryptoNews https://t.co/WgERbRAZvf — The Crypto Radar NewStand (@JONDONI_CRYPTO) July 5, 2025 2025-07-05T13:52:00+00:00 @JONDONI_CRYPTO",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 1.0093642686115345e-06,
+    "prob_neutral": 0.9999834299087524,
+    "prob_positive": 1.557333416712936e-05
   },
   {
     "text": "**The Crypto Radar NewStand (@JONDONI_CRYPTO) / Twitter** \"Crypto: A Study Predicts An Ethereum At $706,000\" #Ethereum #Bitcoin #XRP #Solana #Ondo #Cronos #Binance #Picoin #Cardano #Litecoin #Finance #CryptoNews cointribune.com/en/crypto-a-… \"Crypto: A Study Predicts An Ethereum At $706,000\" #Ethereum #Bitcoin #XRP #Solana #Ondo #Cronos #Binance #Picoin #Cardano #Litecoin #Finance #CryptoNews cointribune.com/en/crypto-a-… 2025-07-05T13:52:00+00:00 @JONDONI_CRYPTO",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 2.857503034192632e-07,
+    "prob_neutral": 0.9999954700469971,
+    "prob_positive": 4.279786935512675e-06
   },
   {
     "text": "**The Crypto Radar NewStand (@JONDONI_CRYPTO) / Twitter** \"Solana Tests Rising Channel Support – Breakdown Could Send Price To $128.50 Level\" #Ethereum #Bitcoin #XRP #Solana #Ondo #Cronos #Binance #Picoin #Cardano #Litecoin #Finance #CryptoNews newsbtc.com/news/solana/sola… \"Solana Tests Rising Channel Support – Breakdown Could Send Price To $128.50 Level\" #Ethereum #Bitcoin #XRP #Solana #Ondo #Cronos #Binance #Picoin #Cardano #Litecoin #Finance #CryptoNews newsbtc.com/news/solana/sola… 2025-07-05T13:52:00+00:00 @JONDONI_CRYPTO",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 5.112503913551336e-07,
+    "prob_neutral": 0.9999933242797852,
+    "prob_positive": 6.1848945733800065e-06
   },
   {
     "text": "**The Crypto Radar NewStand (@JONDONI_CRYPTO) / Twitter** \"Bitcoin Tests $107,000 After $8 Billion Whale Transfer, But Bulls Still in the Fight\"#Ethereum #Bitcoin#XRP #Solana #Ondo #Cronos#Binance #Picoin #Cardano#Litecoin #Finance #CryptoNews \"Bitcoin Tests $107,000 After $8 Billion Whale Transfer, But Bulls Still in the Fight\"#Ethereum #Bitcoin#XRP #Solana #Ondo #Cronos#Binance #Picoin #Cardano#Litecoin #Finance #CryptoNews https://t.co/CrZdejBr9j — The Crypto Radar NewStand (@JONDONI_CRYPTO) July 5, 2025 2025-07-05T13:52:00+00:00 @JONDONI_CRYPTO",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 2.998609431870136e-07,
+    "prob_neutral": 0.9999971389770508,
+    "prob_positive": 2.4949231374193914e-06
   },
   {
     "text": "**The Crypto Radar NewStand (@JONDONI_CRYPTO) / Twitter** \"BeInCrypto Korea Team Lead Contributes to National Digital Asset Policy Development\" #Ethereum #Bitcoin #XRP #Solana #Ondo #Cronos #Binance #Picoin #Cardano #Litecoin #Finance #CryptoNews beincrypto.com/beincrypto-so… \"BeInCrypto Korea Team Lead Contributes to National Digital Asset Policy Development\" #Ethereum #Bitcoin #XRP #Solana #Ondo #Cronos #Binance #Picoin #Cardano #Litecoin #Finance #CryptoNews beincrypto.com/beincrypto-so… 2025-07-05T13:53:00+00:00 @JONDONI_CRYPTO",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 6.860578309897392e-07,
+    "prob_neutral": 0.9998595714569092,
+    "prob_positive": 0.0001396366278640926
   },
   {
     "text": "**The Crypto Radar NewStand (@JONDONI_CRYPTO) / Twitter** \"Bitcoin, The Quantum Threat Is Approaching\"#Ethereum #Bitcoin#XRP #Solana #Ondo #Cronos#Binance #Picoin #Cardano#Litecoin #Finance #CryptoNews \"Bitcoin, The Quantum Threat Is Approaching\"#Ethereum #Bitcoin#XRP #Solana #Ondo #Cronos#Binance #Picoin #Cardano#Litecoin #Finance #CryptoNews https://t.co/PE1f05gvKX — The Crypto Radar NewStand (@JONDONI_CRYPTO) July 5, 2025 2025-07-05T13:53:00+00:00 @JONDONI_CRYPTO",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 1.0858265341084916e-05,
+    "prob_neutral": 0.9999790191650391,
+    "prob_positive": 1.0165301318920683e-05
   },
   {
     "text": "**The Crypto Radar NewStand (@JONDONI_CRYPTO) / Twitter** \"Chainlink Price Continues To Struggle Below $15 — Levels To Watch\"#Ethereum #Bitcoin#XRP #Solana #Ondo #Cronos#Binance #Picoin #Cardano#Litecoin #Finance #CryptoNews \"Chainlink Price Continues To Struggle Below $15 — Levels To Watch\"#Ethereum #Bitcoin#XRP #Solana #Ondo #Cronos#Binance #Picoin #Cardano#Litecoin #Finance #CryptoNews https://t.co/cSXV2sXRwL — The Crypto Radar NewStand (@JONDONI_CRYPTO) July 5, 2025 2025-07-05T13:56:00+00:00 @JONDONI_CRYPTO",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 0.36137738823890686,
+    "prob_neutral": 0.6352005004882812,
+    "prob_positive": 0.0034221329260617495
   },
   {
     "text": "**The Crypto Radar NewStand (@JONDONI_CRYPTO) / Twitter** \"Top 15 Bitcoin Cycling Betting Sites for the 2025 Tour de France [Bonuses, Odds & Features Compared]\" #Ethereum #Bitcoin #XRP #Solana #Ondo #Cronos #Binance #Picoin #Cardano #Litecoin #Finance #CryptoNews news.bitcoin.com/best-bitcoi… \"Top 15 Bitcoin Cycling Betting Sites for the 2025 Tour de France [Bonuses, Odds & Features Compared]\" #Ethereum #Bitcoin #XRP #Solana #Ondo #Cronos #Binance #Picoin #Cardano #Litecoin #Finance #CryptoNews news.bitcoin.com/best-bitcoi… 2025-07-05T14:00:00+00:00 @JONDONI_CRYPTO",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 3.66543133623054e-07,
+    "prob_neutral": 0.9999860525131226,
+    "prob_positive": 1.3560287698055618e-05
   },
   {
     "text": "**The Crypto Radar NewStand (@JONDONI_CRYPTO) / Twitter** \"FTX Risks Legal Backlash For Proposal to Freeze Payouts to Creditors in 49 Countries\" #Ethereum #Bitcoin #XRP #Solana #Ondo #Cronos #Binance #Picoin #Cardano #Litecoin #Finance #CryptoNews beincrypto.com/ftx-plan-to-f… \"FTX Risks Legal Backlash For Proposal to Freeze Payouts to Creditors in 49 Countries\" #Ethereum #Bitcoin #XRP #Solana #Ondo #Cronos #Binance #Picoin #Cardano #Litecoin #Finance #CryptoNews beincrypto.com/ftx-plan-to-f… 2025-07-05T14:00:00+00:00 @JONDONI_CRYPTO",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 1.763322302394954e-06,
+    "prob_neutral": 0.999990701675415,
+    "prob_positive": 7.512929187214468e-06
   },
   {
     "text": "**The Crypto Radar NewStand (@JONDONI_CRYPTO) / Twitter** \"Hong Kong prepares third batch of tokenized bonds, eyes more offerings\"#Ethereum #Bitcoin#XRP #Solana #Ondo #Cronos#Binance #Picoin #Cardano#Litecoin #Finance #CryptoNews \"Hong Kong prepares third batch of tokenized bonds, eyes more offerings\"#Ethereum #Bitcoin#XRP #Solana #Ondo #Cronos#Binance #Picoin #Cardano#Litecoin #Finance #CryptoNews https://t.co/I6iM7bCUg1 — The Crypto Radar NewStand (@JONDONI_CRYPTO) July 5, 2025 2025-07-05T14:00:00+00:00 @JONDONI_CRYPTO",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 1.4170012718750513e-07,
+    "prob_neutral": 0.9999957084655762,
+    "prob_positive": 4.13768611906562e-06
   },
   {
     "text": "**The Crypto Radar NewStand (@JONDONI_CRYPTO) / Twitter** \"XRP Price Eyes 70% Surge To $3.99 As Amid Trendline Test\" #Ethereum #Bitcoin #XRP #Solana #Ondo #Cronos #Binance #Picoin #Cardano #Litecoin #Finance #CryptoNews bitcoinist.com/xrp-price-eye… \"XRP Price Eyes 70% Surge To $3.99 As Amid Trendline Test\" #Ethereum #Bitcoin #XRP #Solana #Ondo #Cronos #Binance #Picoin #Cardano #Litecoin #Finance #CryptoNews bitcoinist.com/xrp-price-eye… 2025-07-05T14:00:00+00:00 @JONDONI_CRYPTO",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 2.0774399672518484e-05,
+    "prob_neutral": 0.9320108294487,
+    "prob_positive": 0.06796843558549881
   },
   {
     "text": "**The Crypto Radar NewStand (@JONDONI_CRYPTO) / Twitter** \"‘We Need a Euro Coin’: Regulators Race to Counter US Stablecoin Grip on European Market\" #Ethereum #Bitcoin #XRP #Solana #Ondo #Cronos #Binance #Picoin #Cardano #Litecoin #Finance #CryptoNews beincrypto.com/eu-challenges… \"‘We Need a Euro Coin’: Regulators Race to Counter US Stablecoin Grip on European Market\" #Ethereum #Bitcoin #XRP #Solana #Ondo #Cronos #Binance #Picoin #Cardano #Litecoin #Finance #CryptoNews beincrypto.com/eu-challenges… 2025-07-05T14:01:00+00:00 @JONDONI_CRYPTO",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 2.72147167379444e-06,
+    "prob_neutral": 0.9999618530273438,
+    "prob_positive": 3.537851443979889e-05
   },
   {
     "text": "**The Crypto Radar NewStand (@JONDONI_CRYPTO) / Twitter** \"Wild New Satoshi Nakamoto Theory Emerges From Massive $8 Billion Bitcoin Transfer Mystery\"#Ethereum #Bitcoin#XRP #Solana #Ondo #Cronos#Binance #Picoin #Cardano#Litecoin #Finance #CryptoNews \"Wild New Satoshi Nakamoto Theory Emerges From Massive $8 Billion Bitcoin Transfer Mystery\"#Ethereum #Bitcoin#XRP #Solana #Ondo #Cronos#Binance #Picoin #Cardano#Litecoin #Finance #CryptoNews https://t.co/Bf0kd7MpuG — The Crypto Radar NewStand (@JONDONI_CRYPTO) July 5, 2025 2025-07-05T14:01:00+00:00 @JONDONI_CRYPTO",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 3.623635222993471e-07,
+    "prob_neutral": 0.9999923706054688,
+    "prob_positive": 7.2976718001882546e-06
   },
   {
     "text": "**The Crypto Radar NewStand (@JONDONI_CRYPTO) / Twitter** \"$140 Million Brazil Bank Heist Turns Crypto: Hackers Funnel Up to $40 Million Through OTC Desks\"#Ethereum #Bitcoin#XRP #Solana #Ondo #Cronos#Binance #Picoin #Cardano#Litecoin #Finance #CryptoNews \"$140 Million Brazil Bank Heist Turns Crypto: Hackers Funnel Up to $40 Million Through OTC Desks\"#Ethereum #Bitcoin#XRP #Solana #Ondo #Cronos#Binance #Picoin #Cardano#Litecoin #Finance #CryptoNews https://t.co/NZBQS4NQWv — The Crypto Radar NewStand (@JONDONI_CRYPTO) July 5, 2025 2025-07-05T14:02:00+00:00 @JONDONI_CRYPTO",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 2.928897515630524e-07,
+    "prob_neutral": 0.9999836683273315,
+    "prob_positive": 1.61104035214521e-05
   },
   {
     "text": "**The Crypto Radar NewStand (@JONDONI_CRYPTO) / Twitter** \"Bitcoin Price Watch: Calm Before the Storm—Could Bitcoin Shatter the $111K Ceiling This Week?\"#Ethereum #Bitcoin#XRP #Solana #Ondo #Cronos#Binance #Picoin #Cardano#Litecoin #Finance #CryptoNews \"Bitcoin Price Watch: Calm Before the Storm—Could Bitcoin Shatter the $111K Ceiling This Week?\"#Ethereum #Bitcoin#XRP #Solana #Ondo #Cronos#Binance #Picoin #Cardano#Litecoin #Finance #CryptoNews https://t.co/N8PaXoeaMC — The Crypto Radar NewStand (@JONDONI_CRYPTO) July 5, 2025 2025-07-05T14:02:00+00:00 @JONDONI_CRYPTO",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 9.124344160227338e-07,
+    "prob_neutral": 0.9999853372573853,
+    "prob_positive": 1.3677493370778393e-05
   },
   {
     "text": "**The Crypto Radar NewStand (@JONDONI_CRYPTO) / Twitter** \"90-Day Indicator Sparks Bullish Signal for Bitcoin\"#Ethereum #Bitcoin#XRP #Solana #Ondo #Cronos#Binance #Picoin #Cardano#Litecoin #Finance #CryptoNews \"90-Day Indicator Sparks Bullish Signal for Bitcoin\"#Ethereum #Bitcoin#XRP #Solana #Ondo #Cronos#Binance #Picoin #Cardano#Litecoin #Finance #CryptoNews https://t.co/YArHz8Ffqe — The Crypto Radar NewStand (@JONDONI_CRYPTO) July 5, 2025 2025-07-05T14:02:00+00:00 @JONDONI_CRYPTO",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 6.41384247046517e-07,
+    "prob_neutral": 0.9996840953826904,
+    "prob_positive": 0.0003153762954752892
   },
   {
     "text": "**The Crypto Radar NewStand (@JONDONI_CRYPTO) / Twitter** \"Bitcoin Investor Sentiment Back To ‘Very Bullish’ — What This Means\"#Ethereum #Bitcoin#XRP #Solana #Ondo #Cronos#Binance #Picoin #Cardano#Litecoin #Finance #CryptoNews \"Bitcoin Investor Sentiment Back To ‘Very Bullish’ — What This Means\"#Ethereum #Bitcoin#XRP #Solana #Ondo #Cronos#Binance #Picoin #Cardano#Litecoin #Finance #CryptoNews https://t.co/YpqJk29nFC — The Crypto Radar NewStand (@JONDONI_CRYPTO) July 5, 2025 2025-07-05T14:03:00+00:00 @JONDONI_CRYPTO",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 0.00011431734310463071,
+    "prob_neutral": 0.6968859434127808,
+    "prob_positive": 0.30299970507621765
   },
   {
     "text": "**The Crypto Radar NewStand (@JONDONI_CRYPTO) / Twitter** \"Bitcoin Enters New Era: Derivatives Dominate As Futures Volume Hits $650 Trillion\" #Ethereum #Bitcoin #XRP #Solana #Ondo #Cronos #Binance #Picoin #Cardano #Litecoin #Finance #CryptoNews bitcoinist.com/bitcoin-enter… \"Bitcoin Enters New Era: Derivatives Dominate As Futures Volume Hits $650 Trillion\" #Ethereum #Bitcoin #XRP #Solana #Ondo #Cronos #Binance #Picoin #Cardano #Litecoin #Finance #CryptoNews bitcoinist.com/bitcoin-enter… 2025-07-05T14:03:00+00:00 @JONDONI_CRYPTO",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 6.297619847828173e-07,
+    "prob_neutral": 0.9999786615371704,
+    "prob_positive": 2.071791277558077e-05
   },
   {
     "text": "**The Crypto Radar NewStand (@JONDONI_CRYPTO) / Twitter** \"DeFi, TradFi convergence could arrive sooner than expected: JPMorgan\" #Ethereum #Bitcoin #XRP #Solana #Ondo #Cronos #Binance #Picoin #Cardano #Litecoin #Finance #CryptoNews cointelegraph.com/news/jpmor… \"DeFi, TradFi convergence could arrive sooner than expected: JPMorgan\" #Ethereum #Bitcoin #XRP #Solana #Ondo #Cronos #Binance #Picoin #Cardano #Litecoin #Finance #CryptoNews cointelegraph.com/news/jpmor… 2025-07-05T14:04:00+00:00 @JONDONI_CRYPTO",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 3.88662883779034e-05,
+    "prob_neutral": 0.9826868176460266,
+    "prob_positive": 0.017274226993322372
   },
   {
     "text": "**news / Twitter Search** おー、ユキーロ来たか お世辞にもボーカル巧いとは言えないけどマンソンマンセーなインダストリアルでラルクよりすきやで 小川はほんと何したいんだか。　 ベースだけ本人のコピバン笑 #ACIDANDROID https://t.co/gLIJoqjCoG おー、ユキーロ来たか お世辞にもボーカル巧いとは言えないけどマンソンマンセーなインダストリアルでラルクよりすきやで 小川はほんと何したいんだか。　 ベースだけ本人のコピバン笑 #ACIDANDROID 2025-07-05T14:01:47+00:00 android19993",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 8.148917913786136e-07,
+    "prob_neutral": 0.9999854564666748,
+    "prob_positive": 1.3652850611833856e-05
   },
   {
     "text": "**news / Twitter Search** @IranIntl_En Fake news @IranIntl_En Fake news 2025-07-05T14:01:48+00:00 IsoldeMiriam",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 1.1525343325047288e-05,
+    "prob_neutral": 0.9999827146530151,
+    "prob_positive": 5.755177426181035e-06
   },
   {
     "text": "**news / Twitter Search** When Is the Best Time to Post for Facebook Marketing? | Social Media Business Playbook News When Is the Best Time to Post for Facebook Marketing? | Social Media Business Playbook News https://t.co/UdZjZJ6JYT 2025-07-05T14:01:48+00:00 AGI2JPN",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 1.0106474519488984e-06,
+    "prob_neutral": 0.9999474287033081,
+    "prob_positive": 5.1628427172545344e-05
   },
   {
     "text": "**news / Twitter Search** @Palestra_News_ Só o Brasileiro mesmo, e isso as custas dos times fracos Copas pode esquecer. Vão sair jogadores provavelmente e é certeza que não vão repor a altura. Time joga um futebol quadrado e ninguém se importa em melhorar @Palestra_News_ Só o Brasileiro mesmo, e isso as custas dos times fracos Copas pode esquecer. Vão sair jogadores provavelmente e é certeza que não vão repor a altura. Time joga um futebol quadrado e ninguém se importa em melhorar 2025-07-05T14:01:48+00:00 LSTsep1914",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 5.308008326210256e-07,
+    "prob_neutral": 0.9999992847442627,
+    "prob_positive": 2.2761305729090964e-07
   },
   {
     "text": "**news / Twitter Search** 【花園西町 火事 動画・画像】大阪府東大阪市花園西町2丁目で火災発生　どの辺？ケガ人は？？…（News Quick Up） 【花園西町 火事 動画・画像】大阪府東大阪市花園西町2丁目で火災発生　どの辺？ケガ人は？？…（News Quick Up） | New...https://t.co/TzcADHKfX3 2025-07-05T14:01:48+00:00 doragon0876",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 2.650186161190504e-06,
+    "prob_neutral": 0.9999263286590576,
+    "prob_positive": 7.102314702933654e-05
   },
   {
     "text": "**news / Twitter Search** @CrazyVibes_1 @JDVance Great news, 12 miles is insane if true @CrazyVibes_1 @JDVance Great news, 12 miles is insane if true 2025-07-05T14:01:48+00:00 Hector394888836",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 2.046438112301985e-06,
+    "prob_neutral": 0.9999840259552002,
+    "prob_positive": 1.3894029507355299e-05
   },
   {
     "text": "**news / Twitter Search** @PTI_News @grok does language important in politics? @PTI_News @grok does language important in politics? 2025-07-05T14:01:49+00:00 mohaanis_38",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 9.217930710292421e-06,
+    "prob_neutral": 0.9999737739562988,
+    "prob_positive": 1.7096768715418875e-05
   },
   {
     "text": "**news / Twitter Search** @niinaeyutaro26 @EKIDEN_News 昨日はお疲れ様でした。 テレビ観戦でしたが、3年生の時の出雲駅伝の猛暑のレース思い出しました。暑いの苦手っぽいから心配しながらテレビ観てました。 世界陸上代表に成るの楽しみにしてます。 @niinaeyutaro26 @EKIDEN_News 昨日はお疲れ様でした。 テレビ観戦でしたが、3年生の時の出雲駅伝の猛暑のレース思い出しました。暑いの苦手っぽいから心配しながらテレビ観てました。 世界陸上代表に成るの楽しみにしてます。 2025-07-05T14:01:49+00:00 ffDA7EFKDhxhZH4",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 1.5879513739491813e-06,
+    "prob_neutral": 0.9999271631240845,
+    "prob_positive": 7.125074625946581e-05
   },
   {
     "text": "**news / Twitter Search** ソース: BURRN! ONLINE ソース: BURRN! ONLINE https://t.co/EQaaAbCT2Y 2025-07-05T14:01:49+00:00 NIKKISHUN2",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 4.489108960115118e-06,
+    "prob_neutral": 0.9999845027923584,
+    "prob_positive": 1.0976454177580308e-05
   },
   {
     "text": "**news / Twitter Search** @thespybrief Discussion of differences in visual perception based upon WEIRD-ness… 🤔 We are shaped by our environment, while we are shaping it. Guardian via: @thespybrief Discussion of differences in visual perception based upon WEIRD-ness… 🤔 We are shaped by our environment, while we are shaping it. Guardian via: https://t.co/AnsbyeS3eu 2025-07-05T14:01:49+00:00 StacezMcKee",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 6.917679797879828e-07,
+    "prob_neutral": 0.9999923706054688,
+    "prob_positive": 6.887901236041216e-06
   },
   {
     "text": "**news / Twitter Search** @RadioZET_NEWS Za Tuska nic nie działa. Zostało 859 dni. Wytrzymajmy @RadioZET_NEWS Za Tuska nic nie działa. Zostało 859 dni. Wytrzymajmy 2025-07-05T14:01:49+00:00 PawelJurkowsky",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 1.8751910829450935e-05,
+    "prob_neutral": 0.9999097585678101,
+    "prob_positive": 7.152386388042942e-05
   },
   {
     "text": "**news / Twitter Search** @DOGE__news She’s BIG mad. @DOGE__news She’s BIG mad. 2025-07-05T14:01:50+00:00 lemmon_joh3316",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 2.7956118628935656e-06,
+    "prob_neutral": 0.9999932050704956,
+    "prob_positive": 4.08828509534942e-06
   },
   {
     "text": "**news / Twitter Search** @srfdva @morris_canada @MarkJCarney @liberal_party Call it what you want, but when all Canadians see on social media on a daily basis & see the news that Muslims/Islamists are constantly creating social chaos and anarchy daily and see news of rapes & murd @srfdva @morris_canada @MarkJCarney @liberal_party Call it what you want, but when all Canadians see on social media on a daily basis & see the news that Muslims/Islamists are constantly creating social chaos and anarchy daily and see news of rapes & murders & judges letting them walk, what do you expect people to believe? Maybe 2025-07-05T14:01:50+00:00 LeonardRoxon",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 2.7504470381245483e-06,
+    "prob_neutral": 0.9999867677688599,
+    "prob_positive": 1.0523591299715918e-05
   },
   {
     "text": "**news / Twitter Search** @CharlieK_news Thank goodness for that. x @CharlieK_news Thank goodness for that. x 2025-07-05T14:01:51+00:00 AlanDuerden1",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 0.00010124622349394485,
+    "prob_neutral": 0.8125531673431396,
+    "prob_positive": 0.18734562397003174
   },
   {
     "text": "**The Economist (@TheEconomist) / Twitter** If you have ever relaxed with a cold Kingfisher beer at the end of a long, sweaty day in Mumbai, you have almost certainly broken the law economist.com/asia/2025/07/0… If you have ever relaxed with a cold Kingfisher beer at the end of a long, sweaty day in Mumbai, you have almost certainly broken the law https://t.co/k1YAMeows4 — The Economist (@TheEconomist) July 5, 2025 2025-07-05T14:00:16+00:00 @TheEconomist",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 4.141308636462782e-06,
+    "prob_neutral": 0.9999924898147583,
+    "prob_positive": 3.3814174003055086e-06
   },
   {
     "text": "**finance news / Twitter Search** BioXcel Therapeutics Receives Second Positive Recommendation from Data Safety Monitoring Board (DSMB) to Continue SERENITY At-Home Pivotal Phase 3 Safety Trial for Acute Treatment of Agitation Associated with Bipolar Disorders or Schizophrenia finance.yah BioXcel Therapeutics Receives Second Positive Recommendation from Data Safety Monitoring Board (DSMB) to Continue SERENITY At-Home Pivotal Phase 3 Safety Trial for Acute Treatment of Agitation Associated with Bipolar Disorders or Schizophrenia finance.yahoo.com/news/bioxcel-t… 2025-07-05T13:40:13+00:00 @sales_js",
-    "dominant_sentiment": "POSITIVE"
+    "predicted_label": "POSITIVE",
+    "prob_negative": 2.228706641460576e-08,
+    "prob_neutral": 4.0203187268161855e-07,
+    "prob_positive": 0.9999996423721313
   },
   {
     "text": "**finance news / Twitter Search** @DemocraticWins finance.senate.gov/chairmans-news… @DemocraticWins finance.senate.gov/chairmans-news… 2025-07-05T13:45:14+00:00 @Middleclass1967",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 1.915713437483646e-05,
+    "prob_neutral": 0.9999157190322876,
+    "prob_positive": 6.511846004286781e-05
   },
   {
     "text": "**finance news / Twitter Search** AI Arms Race: Inside Meta's New Superintelligence Lab Meta has launched the Meta Superintelligence Lab (MSL), poaching top talent from competitors. finance.yahoo.com/news/meta-laun… With the brightest minds in AI converging to build AGI, what are the unsp AI Arms Race: Inside Meta's New Superintelligence Lab Meta has launched the Meta Superintelligence Lab (MSL), poaching top talent from competitors. finance.yahoo.com/news/meta-laun… With the brightest minds in AI converging to build AGI, what are the unspoken ethical guardrails being put… 2025-07-05T13:45:24+00:00 @dylan_curious",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 7.252582236105809e-06,
+    "prob_neutral": 0.9997970461845398,
+    "prob_positive": 0.00019575968326535076
   },
   {
     "text": "**finance news / Twitter Search** US debt is now $37tn – should we be worried? finance.yahoo.com/news/us-debt-n… US debt is now $37tn – should we be worried? https://t.co/pHtHkMllJC — ThirdEyeOfTheStorm (@LizardB01935413) July 5, 2025 2025-07-05T13:46:56+00:00 @LizardB01935413",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 0.016265008598566055,
+    "prob_neutral": 0.9826915860176086,
+    "prob_positive": 0.0010434248251840472
   },
   {
     "text": "**finance news / Twitter Search** finance.yahoo.com/news/why-fourt… this is great for america first https://t.co/Q0VveYqA7h this is great for america first — Roqué Anthony (@jax7804) July 5, 2025 2025-07-05T13:48:31+00:00 @jax7804",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 1.645063457544893e-05,
+    "prob_neutral": 0.9920399188995361,
+    "prob_positive": 0.007943655364215374
   },
   {
     "text": "**finance news / Twitter Search** Interviewed for this @YahooFinance article on Canadian grocery square footage expansion #retail #grocery #stores #harddiscount #fullservice #cityformats ca.finance.yahoo.com/news/canadian-… Interviewed for this @YahooFinance article on Canadian grocery square footage expansion #retail #grocery #stores #harddiscount #fullservice #cityformats ca.finance.yahoo.com/news/canadian-… 2025-07-05T13:48:32+00:00 @winder_bruce",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 5.27922395576752e-07,
+    "prob_neutral": 0.9999958276748657,
+    "prob_positive": 3.654537067632191e-06
   },
   {
     "text": "**finance news / Twitter Search** Goldman Sachs Reaffirms “Buy” Rating on Iovance (IOVA) for Positive Amtagvi Data finance.yahoo.com/news/goldman-s… Goldman Sachs Reaffirms “Buy” Rating on Iovance (IOVA) for Positive Amtagvi Data finance.yahoo.com/news/goldman-s… 2025-07-05T13:49:17+00:00 @sales_js",
-    "dominant_sentiment": "POSITIVE"
+    "predicted_label": "POSITIVE",
+    "prob_negative": 4.704619641415775e-06,
+    "prob_neutral": 0.024481074884533882,
+    "prob_positive": 0.9755142331123352
   },
   {
     "text": "**finance news / Twitter Search** @bizalmanac finance.yahoo.com/news/greenhave… @bizalmanac finance.yahoo.com/news/greenhave… 2025-07-05T13:49:51+00:00 @DeepSailCapital",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 8.699118552613072e-06,
+    "prob_neutral": 0.9999690055847168,
+    "prob_positive": 2.2270993213169277e-05
   },
   {
     "text": "**finance news / Twitter Search** #MCPersonalFinance | China funds give up to 53% returns in a year: Should you look to invest? #China #Funds @Abhinavkaul reports ⤵️ moneycontrol.com/news/business/… #MCPersonalFinance | China funds give up to 53% returns in a year: Should you look to invest? #China #Funds @Abhinavkaul reports ⤵️ moneycontrol.com/news/business/… 2025-07-05T13:50:00+00:00 @moneycontrolcom",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 7.635811698492034e-07,
+    "prob_neutral": 0.9999692440032959,
+    "prob_positive": 3.0033252187422477e-05
   },
   {
     "text": "**finance news / Twitter Search** 💪woop woop💪#ADOPTION #altcoin #BNB #BTC #ETH #ERC20 #NFT #NFTS #SmartContracts #business #Crypto #Coinbase #Finance #XVG #fintech #secure #payments $XVG #ISO20022 #GlobalGoals #news #opensource #Decentralized #PoW #XVGERC20 #XVGETH #ERC20 💪woop woop💪#ADOPTION #altcoin #BNB #BTC #ETH #ERC20 #NFT #NFTS #SmartContracts #business #Crypto #Coinbase #Finance #XVG #fintech #secure #payments $XVG #ISO20022 #GlobalGoals #news #opensource #Decentralized #PoW #XVGERC20 #XVGETH #ERC20 2025-07-05T13:50:21+00:00 @KnallimAll",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 8.772610726737184e-08,
+    "prob_neutral": 0.9999923706054688,
+    "prob_positive": 7.534804808528861e-06
   },
   {
     "text": "**finance news / Twitter Search** \"Robinhood’s 24/7 tokenization push threatens NYSE revenues: Galaxy Digital\" #Ethereum #Bitcoin #XRP #Solana #Ondo #Cronos #Binance #Picoin #Cardano #Litecoin #Finance #CryptoNews cointelegraph.com/news/robinhood… \"Robinhood’s 24/7 tokenization push threatens NYSE revenues: Galaxy Digital\"#Ethereum #Bitcoin#XRP #Solana #Ondo #Cronos#Binance #Picoin #Cardano#Litecoin #Finance #CryptoNews https://t.co/WgERbRAZvf — The Crypto Radar NewStand (@JONDONI_CRYPTO) July 5, 2025 2025-07-05T13:52:02+00:00 @JONDONI_CRYPTO",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 1.0529712426432525e-06,
+    "prob_neutral": 0.9999785423278809,
+    "prob_positive": 2.0367902834550478e-05
   },
   {
     "text": "**finance news / Twitter Search** Things you won't see on the Evening News: zerohedge.com/personal-finan… Things you won't see on the Evening News: zerohedge.com/personal-finan… 2025-07-05T13:52:31+00:00 @C_Farthammer",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 7.76974320615409e-06,
+    "prob_neutral": 0.9999586343765259,
+    "prob_positive": 3.365649899933487e-05
   },
   {
     "text": "**The Economist (@TheEconomist) / Twitter** Recep Tayyip Erdogan and the American president have picked up right where they had left off economist.com/europe/2025/07… Recep Tayyip Erdogan and the American president have picked up right where they had left off https://t.co/E4sIfXcL5Y — The Economist (@TheEconomist) July 5, 2025 2025-07-05T13:40:12+00:00 @TheEconomist",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 2.7736339234252227e-06,
+    "prob_neutral": 0.9999436140060425,
+    "prob_positive": 5.362811134546064e-05
   },
   {
     "text": "**The Economist (@TheEconomist) / Twitter** Barcelona is booming. It is all a far cry from 2017, when a separatist Catalan government plunged Spain into turmoil with an unconstitutional referendum on secession. But the calm is not without controversy Barcelona is booming. It is all a far cry from 2017, when a separatist Catalan government plunged Spain into turmoil with an unconstitutional referendum on secession. But the calm is not without controversy https://t.co/ml8ovRpdHC — The Economist (@TheEconomist) July 5, 2025 2025-07-05T13:20:00+00:00 @TheEconomist",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 0.0021161893382668495,
+    "prob_neutral": 0.9975367784500122,
+    "prob_positive": 0.00034702621633186936
   },
   {
     "text": "**BBC News (World) (@BBCWorld) / Twitter** Funeral for Diogo Jota and André Silva held in Portugal bbc.in/40EZgp4 Funeral for Diogo Jota and André Silva held in Portugal https://t.co/l5GPA6lcdy — BBC News (World) (@BBCWorld) July 5, 2025 2025-07-05T13:05:25+00:00 @BBCWorld",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 1.8991539718626882e-06,
+    "prob_neutral": 0.9999798536300659,
+    "prob_positive": 1.8200860722572543e-05
   },
   {
     "text": "**BBC News (World) (@BBCWorld) / Twitter** War zone sexual violence statue moves to The Hague bbc.in/44Mrd0F War zone sexual violence statue moves to The Hague https://t.co/0pisc95zir — BBC News (World) (@BBCWorld) July 5, 2025 2025-07-05T13:12:15+00:00 @BBCWorld",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 5.261876140139066e-06,
+    "prob_neutral": 0.9999643564224243,
+    "prob_positive": 3.0339289878611453e-05
   },
   {
     "text": "**The Crypto Radar NewStand (@JONDONI_CRYPTO) / Twitter** \"XRP Traders Eye $10 as Ripple’s U.S. Banking Bid Builds Market Optimism\" #Ethereum #Bitcoin #XRP #Solana #Ondo #Cronos #Binance #Picoin #Cardano #Litecoin #Finance #CryptoNews coindesk.com/markets/2025/0… \"XRP Traders Eye $10 as Ripple’s U.S. Banking Bid Builds Market Optimism\"#Ethereum #Bitcoin#XRP #Solana #Ondo #Cronos#Binance #Picoin #Cardano#Litecoin #Finance #CryptoNews https://t.co/v1Fu85knxj — The Crypto Radar NewStand (@JONDONI_CRYPTO) July 5, 2025 2025-07-05T12:54:07+00:00 @JONDONI_CRYPTO",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 1.3878744766770978e-06,
+    "prob_neutral": 0.9998766183853149,
+    "prob_positive": 0.0001219212863361463
   },
   {
     "text": "**CNN (@CNN) / Twitter** Tropical Storm Chantal forms off the Southeastern US coast, putting parts of North and South Carolina under a tropical storm warning Tropical Storm Chantal forms off the Southeastern US coast, putting parts of North and South Carolina under a tropical storm warninghttps://t.co/YzhYqfJf13 — CNN (@CNN) July 5, 2025 2025-07-05T12:54:00+00:00 @CNN",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 4.682181042880984e-06,
+    "prob_neutral": 0.9999724626541138,
+    "prob_positive": 2.288360337843187e-05
   },
   {
     "text": "**The Economist (@TheEconomist) / Twitter** On this week’s “Money Talks”, @Birdyword pays a visit to Salim Ramji, the man with $10trn under management econ.st/40C2DNB economist.com/podcasts/2025/… On this week’s “Money Talks”, @Birdyword pays a visit to Salim Ramji, the man with $10trn under management https://t.co/fN9W8txZAM https://t.co/ypG6Cd4S2w — The Economist (@TheEconomist) July 5, 2025 2025-07-05T13:00:21+00:00 @TheEconomist",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 4.3190434553253e-06,
+    "prob_neutral": 0.9999861717224121,
+    "prob_positive": 9.558614692650735e-06
   },
   {
     "text": "**news / Twitter Search** Old News 🥱 Old News 🥱 https://t.co/vjxY3ibUta — Great Society Enjoyer 🇺🇸 (@lil_hubcap1) July 5, 2025 2025-07-05T13:01:31+00:00 lil_hubcap1",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 9.549743253955967e-07,
+    "prob_neutral": 0.9999908208847046,
+    "prob_positive": 8.266257282230072e-06
   },
   {
     "text": "**news / Twitter Search** @CharlieK_news pic.twitter.com/gB05ltaw5B — Wry ToastE (@read_red_ed_d_) July 5, 2025 2025-07-05T13:01:31+00:00 read_red_ed_d_",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 2.570258629930322e-06,
+    "prob_neutral": 0.9999854564666748,
+    "prob_positive": 1.1964712939516176e-05
   },
   {
     "text": "**news / Twitter Search** @baesdolls BUT STILL, IT'S A GOOD NEWS THO BUT STILL, IT'S A GOOD NEWS THO — odam. Mulfand (@bumjundam) July 5, 2025 2025-07-05T13:01:31+00:00 bumjundam",
-    "dominant_sentiment": "POSITIVE"
+    "predicted_label": "POSITIVE",
+    "prob_negative": 5.445081114885397e-06,
+    "prob_neutral": 0.0054192622192204,
+    "prob_positive": 0.9945752620697021
   },
   {
     "text": "**news / Twitter Search** @Cent_Maine @union_build Bridges are old news. @union_build is out here laying highways across chains. ZK is the engine, Union is the route. Me & $U? We locked in. @Cent_Maine @union_build Bridges are old news. @union_build is out here laying highways across chains. ZK is the engine, Union is the route. Me & $U? We locked in. 2025-07-05T13:01:31+00:00 web3_godwin",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 3.6932485159013595e-07,
+    "prob_neutral": 0.9999971389770508,
+    "prob_positive": 2.498201411071932e-06
   },
   {
     "text": "**news / Twitter Search** さだまさし、２曲目でライブ中断「突然声が出なくなりました」１１月に延期　ファンから心配され「感激し、恐縮しています」(スポーツ報知) さだまさし、２曲目でライブ中断「突然声が出なくなりました」１１月に延期　ファンから心配され「感激し、恐縮しています」(スポーツ報知) https://t.co/KP5skdq6H1 — ラベンダー成瀬〜宇宙の広さを知る人よ〜 (@hjeP7lIt1B12704) July 5, 2025 2025-07-05T13:01:31+00:00 hjeP7lIt1B12704",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 1.3780672816210426e-06,
+    "prob_neutral": 0.9999433755874634,
+    "prob_positive": 5.523917934624478e-05
   },
   {
     "text": "**news / Twitter Search** @nh3aibrS1cwuaks @Sankei_news 独裁者の顔してるなあって思う たまにドラマに出るやつね 独裁者の顔してるなあって思う たまにドラマに出るやつね — らっく (@adh_oz) July 5, 2025 2025-07-05T13:01:31+00:00 adh_oz",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 2.017410224652849e-06,
+    "prob_neutral": 0.9999476671218872,
+    "prob_positive": 5.032580520492047e-05
   },
   {
     "text": "**news / Twitter Search** Ｊ２リーグ戦通算２５,０００ゴールは… 本日、７月５日、秋田戦、水戸ホーリーホックの齋藤俊輔選手 おめでとうございます #水戸ホーリーホック #齋藤 俊輔 #25,000ゴール #0705秋田戦 Ｊ２リーグ戦通算２５,０００ゴールは… 本日、７月５日、秋田戦、水戸ホーリーホックの齋藤俊輔選手 おめでとうございます https://t.co/UsNwLl5Cs7 #水戸ホーリーホック #齋藤 俊輔 #25,000ゴール #0705秋田戦 2025-07-05T13:01:31+00:00 Nakaga8",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 1.8288794763066107e-06,
+    "prob_neutral": 0.9999428987503052,
+    "prob_positive": 5.5284632253460586e-05
   },
   {
     "text": "**news / Twitter Search** 七夕の日に🎋NEWS当落ってヤバくないですか！？お祈りしとこ🙏🙏💫✨絶対に当たらないと思ってる😂😂😂😂www 七夕の日に🎋NEWS当落ってヤバくないですか！？お祈りしとこ🙏🙏💫✨絶対に当たらないと思ってる😂😂😂😂www — □♡けるまい△○ (@kawamaippp) July 5, 2025 2025-07-05T13:01:32+00:00 kawamaippp",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 3.1021886570670176e-07,
+    "prob_neutral": 0.9999970197677612,
+    "prob_positive": 2.6337690997024765e-06
   },
   {
     "text": "**news / Twitter Search** @akafaceUS There is no reason why they shouldn’t. Accountability is no more than social media whining and B.S. mainstream media news cycles. @akafaceUS There is no reason why they shouldn’t. Accountability is no more than social media whining and B.S. mainstream media news cycles. https://t.co/asoFRf4O68 2025-07-05T13:01:32+00:00 ITZDAinGA",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 2.2105428797658533e-05,
+    "prob_neutral": 0.9999486207962036,
+    "prob_positive": 2.9339529646676965e-05
   },
   {
     "text": "**news / Twitter Search** @CharlieK_news Name one, Joe. Name one, Joe. — Jim (@Jim271067656904) July 5, 2025 2025-07-05T13:01:32+00:00 Jim271067656904",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 2.7046144168707542e-06,
+    "prob_neutral": 0.999988317489624,
+    "prob_positive": 8.911004442779813e-06
   },
   {
     "text": "**news / Twitter Search** Torturing chronic pain patients while making bank promoting addictive behaviors.....SMH Torturing chronic pain patients while making bank promoting addictive behaviors.....SMH https://t.co/67LzYHDnYR 2025-07-05T13:01:32+00:00 PainPlayhouse",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 5.691480055247666e-06,
+    "prob_neutral": 0.9999673366546631,
+    "prob_positive": 2.6931518732453696e-05
   },
   {
     "text": "**news / Twitter Search** I am a rival but reading this actually pains me, this is news is an insult to Rodrygo I am a rival but reading this actually pains me, this is news is an insult to Rodrygo 2025-07-05T13:01:33+00:00 __yakubu",
-    "dominant_sentiment": "NEGATIVE"
+    "predicted_label": "NEGATIVE",
+    "prob_negative": 0.9342100024223328,
+    "prob_neutral": 0.06554753333330154,
+    "prob_positive": 0.0002424526755930856
   },
   {
     "text": "**news / Twitter Search** @laderechadiario Justo el e sobrado de uds @edufeiok acaba de compartir una Fake news, la mayor cantidad de opas la albergan uds. Justo el e sobrado de uds @edufeiok acaba de compartir una Fake news, la mayor cantidad de opas la albergan uds. — 𝙋𝙖𝙗𝙡𝙤 𝙎𝙤𝙪𝙩𝙤 ✝️ (@pablosouto07) July 5, 2025 2025-07-05T13:01:33+00:00 pablosouto07",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 1.0139036930922884e-05,
+    "prob_neutral": 0.9999822378158569,
+    "prob_positive": 7.670122613490093e-06
   },
   {
     "text": "**news / Twitter Search** @Vyral_News_ AARONMERCURY EN LCDLFMX3 @Vyral_News_ AARONMERCURY EN LCDLFMX3 2025-07-05T13:01:34+00:00 marianamndzv",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 4.263264600012917e-06,
+    "prob_neutral": 0.9999822378158569,
+    "prob_positive": 1.3485077033692505e-05
   },
   {
     "text": "**news / Twitter Search** @BarbaraSutton15 It is almost like they are afraid to cover the real news! It is almost like they are afraid to cover the real news! — Althea Brandon (@AltheaBrandon7) July 5, 2025 2025-07-05T13:01:34+00:00 AltheaBrandon7",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 7.653372449567541e-06,
+    "prob_neutral": 0.99992835521698,
+    "prob_positive": 6.398344703484327e-05
   },
   {
     "text": "**news / Twitter Search** シャッフルメドレーのチャンカパーナが日本語セリフから始まっててうらやましすぎる NEWS担は本人たちから今年はまだ英語版しか聴けてないというのに…！ 如恵留くんの最後のチャンカパーナありがとうね シャッフルメドレーのチャンカパーナが日本語セリフから始まっててうらやましすぎる NEWS担は本人たちから今年はまだ英語版しか聴けてないというのに…！ 如恵留くんの最後のチャンカパーナありがとうね — うたこ (@uta_utatta) July 5, 2025 2025-07-05T13:01:34+00:00 uta_utatta",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 5.997438279337075e-07,
+    "prob_neutral": 0.9999866485595703,
+    "prob_positive": 1.2718325706373435e-05
   },
   {
     "text": "**finance news / Twitter Search** @Cointelegraph Big news for stablecoins! The future of finance is certainly looking more digital. Big news for stablecoins! The future of finance is certainly looking more digital. — Muhammednezify (@muhammednezify) July 5, 2025 2025-07-05T12:42:57+00:00 @muhammednezify",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 1.9670917026815005e-05,
+    "prob_neutral": 0.9996111989021301,
+    "prob_positive": 0.0003691973106469959
   },
   {
     "text": "**finance news / Twitter Search** US debt is now $37trn – should we be worried? cause for concern ? finance.yahoo.com/news/us-debt-n… via @Yahoo US debt is now $37trn – should we be worried? cause for concern ?https://t.co/I7dkUPKdMb via @Yahoo — Yousuff Ahmed (@yousuff7860) July 5, 2025 2025-07-05T12:44:20+00:00 @yousuff7860",
-    "dominant_sentiment": "NEGATIVE"
+    "predicted_label": "NEGATIVE",
+    "prob_negative": 0.9634912610054016,
+    "prob_neutral": 0.03621582314372063,
+    "prob_positive": 0.00029285799246281385
   },
   {
     "text": "**finance news / Twitter Search** @Ed_Miliband @Keir_Starmer funny how you fail to spin platitudes when news like this comes out? What a collosal waste! But why worry the UK public will just pay for it eh? @KemiBadenoch maybe ask a PMQ, not that it'll be answered! 🙄 rechargenews.com/mark @Ed_Miliband @Keir_Starmer funny how you fail to spin platitudes when news like this comes out? What a collosal waste! But why worry the UK public will just pay for it eh? @KemiBadenoch maybe ask a PMQ, not that it'll be answered! 🙄https://t.co/t7lupZs7yY — NathanJT (@NathanJT) July 5, 2025 2025-07-05T12:46:30+00:00 @NathanJT",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 0.00024087524798233062,
+    "prob_neutral": 0.9997280240058899,
+    "prob_positive": 3.109887256869115e-05
   },
   {
     "text": "**finance news / Twitter Search** ca.finance.yahoo.com/news/e2gold-an… Toronto, Ontario--(Newsfile Corp. - July 4, 2025) - E2Gold Inc. (TSXV: ETU) (OTC Pink: ETUGF) reports that Kyle Nazareth has resigned as Chief Financial Office... https://t.co/YpMCom0FIA Toronto, Ontario--(Newsfile Corp. - July 4, 2025) - E2Gold Inc. (TSXV: ETU) (OTC Pink: ETUGF) reports that Kyle Nazareth has resigned as Chief Financial Office... — SilverrGold (@silvergoldbugs) July 5, 2025 2025-07-05T12:47:06+00:00 @silvergoldbugs",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 0.00023504538694396615,
+    "prob_neutral": 0.9997416138648987,
+    "prob_positive": 2.33379214478191e-05
   },
   {
     "text": "**finance news / Twitter Search** 🔥 #BolletteLuce: Hai Pagato 5 Miliardi di Euro di Troppo? 🚨 L'Indagine #ARERA Scuote il Mercato! Scopri su ORA ULTIMA: oraultima.com/elettricita-bo… #5luglio #economia #business #Finance #news 🔥 #BolletteLuce: Hai Pagato 5 Miliardi di Euro di Troppo? 🚨 L'Indagine #ARERA Scuote il Mercato! Scopri su ORA ULTIMA: https://t.co/UpIy1hp5iN#5luglio #economia #business #Finance #news — ORA ULTIMA (@OraUltima_com) July 5, 2025 2025-07-05T12:48:07+00:00 @OraUltima_com",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 2.1811568728935526e-07,
+    "prob_neutral": 0.9999994039535522,
+    "prob_positive": 3.681577993575047e-07
   },
   {
     "text": "**finance news / Twitter Search** The Mexican Finance Ministry said it will spin off the trust businesses of two banks following US accusations that they laundered proceeds from illicit drug trafficking. bloomberg.com/news/articles/… The Mexican Finance Ministry said it will spin off the trust businesses of two banks following US accusations that they laundered proceeds from illicit drug trafficking. https://t.co/CIFaR47FFH — Valentine Hilaire (@ValiHilaire) July 5, 2025 2025-07-05T12:48:45+00:00 @ValiHilaire",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 6.979757017688826e-05,
+    "prob_neutral": 0.9997174143791199,
+    "prob_positive": 0.00021270081924740225
   },
   {
     "text": "**finance news / Twitter Search** 138-year-old grocery store staple files for bankruptcy finance.yahoo.com/news/138-old-g… via @CNNBusiness 138-year-old grocery store staple files for bankruptcy https://t.co/qtRfYBhNkA via @CNNBusiness — Yahoo Finance (@YahooFinance) July 5, 2025 2025-07-05T12:49:00+00:00 @YahooFinance",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 1.2512506145867519e-05,
+    "prob_neutral": 0.999954342842102,
+    "prob_positive": 3.3134117984445766e-05
   },
   {
     "text": "**finance news / Twitter Search** Let´s bring Alaska & California >back home< and leave the rest 🙄🙂 >\"Since the beginning of this year, the dollar has fallen 10% against the pound and 15% against the euro.\"< finance.yahoo.com/news/us-debt-n… Let´s bring Alaska & California >back home< and leave the rest 🙄🙂 >\"Since the beginning of this year, the dollar has fallen 10% against the pound and 15% against the euro.\"<https://t.co/teGBrIduZQ — Michael Konrad Reich (@michael_k_reich) July 5, 2025 2025-07-05T12:49:09+00:00 @michael_k_reich",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 0.0011772681027650833,
+    "prob_neutral": 0.9986677169799805,
+    "prob_positive": 0.0001550408487673849
   },
   {
     "text": "**finance news / Twitter Search** @ServePamela @AshReganMSP That great news fully back decriminalised and think of all money raise in tax help public finance could in million of pound That great news fully back decriminalised and think of all money raise in tax help public finance could in million of pound — Mr darkclub (@mrswingers1973) July 5, 2025 2025-07-05T12:50:37+00:00 @mrswingers1973",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 1.668994991632644e-05,
+    "prob_neutral": 0.9995480179786682,
+    "prob_positive": 0.00043524097418412566
   },
   {
     "text": "**finance news / Twitter Search** US debt is now $37trn – should we be worried? finance.yahoo.com/news/us-debt-n… US debt is now $37trn – should we be worried? https://t.co/uL0z68fIt7 — Mel Horne (@MadMerdhyn) July 5, 2025 2025-07-05T12:52:24+00:00 @MadMerdhyn",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 0.14295653998851776,
+    "prob_neutral": 0.8547171950340271,
+    "prob_positive": 0.0023262519389390945
   },
   {
     "text": "**The Economist (@TheEconomist) / Twitter** The resort boasts 5km of beaches, cinemas, shopping malls restaurants and 54 hotels. But foreigners shouldn’t pack their bags quite yet economist.com/asia/2025/07/0… The resort boasts 5km of beaches, cinemas, shopping malls restaurants and 54 hotels. But foreigners shouldn’t pack their bags quite yet https://t.co/U7ETF8OzF9 — The Economist (@TheEconomist) July 5, 2025 2025-07-05T12:40:11+00:00 @TheEconomist",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 1.1759640301534091e-06,
+    "prob_neutral": 0.9999953508377075,
+    "prob_positive": 3.4721956581051927e-06
   },
   {
     "text": "**BBC News (World) (@BBCWorld) / Twitter** Crowds gather for Orange Order parade in Donegal bbc.in/4nQzicv Crowds gather for Orange Order parade in Donegal https://t.co/DiDHQXMAKN — BBC News (World) (@BBCWorld) July 5, 2025 2025-07-05T12:18:14+00:00 @BBCWorld",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 2.2877817173139192e-05,
+    "prob_neutral": 0.9998931884765625,
+    "prob_positive": 8.392382733291015e-05
   },
   {
     "text": "**The Economist (@TheEconomist) / Twitter** Rumour-filled books about the Communist Party’s machinations have become harder to find. Our data-crunching assesses how many people this year stand accused of owning a secret stash economist.com/china/2025/07/… Rumour-filled books about the Communist Party’s machinations have become harder to find. Our data-crunching assesses how many people this year stand accused of owning a secret stash https://t.co/giuSj8Qvw9 — The Economist (@TheEconomist) July 5, 2025 2025-07-05T12:20:10+00:00 @TheEconomist",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 0.00021699594799429178,
+    "prob_neutral": 0.999722421169281,
+    "prob_positive": 6.04971319262404e-05
   },
   {
     "text": "**news / Twitter Search** ▷「高校野球ガイド」電子版 毎年夏の県大会開幕に合わせて発行しているガイド、通称「別刷り」。出場する全てのチームを写真と文章で紹介した決定版です❗️ 上毛新聞電子版では、この別刷りを有料会員向けに公開しています🍀何度でも読み返して高校野球へ思いを高めましょう🔥👊🏻⚾️ ▷「高校野球ガイド」電子版 毎年夏の県大会開幕に合わせて発行しているガイド、通称「別刷り」。出場する全てのチームを写真と文章で紹介した決定版です❗️ 上毛新聞電子版では、この別刷りを有料会員向けに公開しています🍀何度でも読み返して高校野球へ思いを高めましょう🔥👊🏻⚾️ pic.twitter.com/4PnYm7dJKz — 上毛新聞 (@jomo_news) July 5, 2025 2025-07-05T12:01:15+00:00 jomo_news",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 2.179279135816614e-06,
+    "prob_neutral": 0.9996508359909058,
+    "prob_positive": 0.00034707493614405394
   },
   {
     "text": "**news / Twitter Search** چې يو عسکر پکې وژل شوی دی. له بلې خوا، د جنوبي وزيرستان په يوه غلچکي بريد کې د پوځ يو موټر په نښه شوی، چې سرچينې وايي، موټر له منځه تللی او سپاره ټول پوځيان وژل شوي دي. په ورته مهال، د شمالي وزيرستان په يوه کيمپ تعرضي بريد شوی، ⬇️ چې يو عسکر پکې وژل شوی دی. له بلې خوا، د جنوبي وزيرستان په يوه غلچکي بريد کې د پوځ يو موټر په نښه شوی، چې سرچينې وايي، موټر له منځه تللی او سپاره ټول پوځيان وژل شوي دي. په ورته مهال، د شمالي وزيرستان په يوه کيمپ تعرضي بريد شوی، ⬇️ — پاکستان غږ نیوز (@P_G_News) July 5, 2025 2025-07-05T12:01:15+00:00 P_G_News",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 1.1824885177702527e-06,
+    "prob_neutral": 0.9996813535690308,
+    "prob_positive": 0.0003174387675244361
   },
   {
     "text": "**news / Twitter Search** سب سے بڑی اور پرانی جمہوریت کی سالگرہ، ہندوستان میں منایا گیا امریکہ کا یوم آزادی، گارسیٹی بولے- یہ فخر کی بات👇👇👇 سب سے بڑی اور پرانی جمہوریت کی سالگرہ، ہندوستان میں منایا گیا امریکہ کا یوم آزادی، گارسیٹی بولے- یہ فخر کی بات👇👇👇https://t.co/LEt4TFR85c pic.twitter.com/qtQ7WY5ELB — The Hind Samachar News - Urdu (@hindsamachar3) July 5, 2025 2025-07-05T12:01:15+00:00 hindsamachar3",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 8.950447409006301e-06,
+    "prob_neutral": 0.999876856803894,
+    "prob_positive": 0.0001142228429671377
   },
   {
     "text": "**news / Twitter Search** It's an shocking news that 32 members of the tibetan youth congress from North America demand action to address the corruption within Gaden Phodrang Trust!. #DalaiLamaLegacyCrisis It's an shocking news that 32 members of the tibetan youth congress from North America demand action to address the corruption within Gaden Phodrang Trust!. #DalaiLamaLegacyCrisis — Dipa (@dipa_ghosh0) July 5, 2025 2025-07-05T12:01:15+00:00 dipa_ghosh0",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 0.00017270896933041513,
+    "prob_neutral": 0.9997555613517761,
+    "prob_positive": 7.169159653130919e-05
   },
   {
     "text": "**news / Twitter Search** South Africa: Cape Town floods displace thousands of informal settlement residents, more rain expected via @SowetanLIVE South Africa: Cape Town floods displace thousands of informal settlement residents, more rain expected https://t.co/Hj0ojPfpvf via @SowetanLIVE — AugustusConsulting (@AugustusConsult) July 5, 2025 2025-07-05T12:01:16+00:00 AugustusConsult",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 5.147107731318101e-05,
+    "prob_neutral": 0.9998905658721924,
+    "prob_positive": 5.793471063952893e-05
   },
   {
     "text": "**news / Twitter Search** @traversingkrith madam ,you have a divine job. once this news spreads like fire the temple might become another Tiruvannamalai for pournami giriwalam. thanks a lot as a lord shiv devotee madam ,you have a divine job. once this news spreads like fire the temple might become another Tiruvannamalai for pournami giriwalam. thanks a lot as a lord shiv devotee — subramanian (@subra1008) July 5, 2025 2025-07-05T12:01:16+00:00 subra1008",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 0.0005887832376174629,
+    "prob_neutral": 0.9868180751800537,
+    "prob_positive": 0.012593189254403114
   },
   {
     "text": "**news / Twitter Search** @DOGE__news She should try the ufc. They probably pay well because a job will fix all her needs. She should try the ufc. They probably pay well because a job will fix all her needs. — Renee North 🇺🇸 MAGA (@NorthRenee) July 5, 2025 2025-07-05T12:01:16+00:00 NorthRenee",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 1.605577563168481e-05,
+    "prob_neutral": 0.9996187686920166,
+    "prob_positive": 0.00036507350159808993
   },
   {
     "text": "**news / Twitter Search** കൊളോണിയൽ ഭരണത്തിന്റെ നിഴലുകളിൽ നിന്നാണ് ഇരു രാഷ്ട്രങ്ങളും സധൈര്യം ഉയർന്നു വന്നതെന്നും പ്രധാനമന്ത്രി #NarendraModi #trinidadandtobago കൊളോണിയൽ ഭരണത്തിന്റെ നിഴലുകളിൽ നിന്നാണ് ഇരു രാഷ്ട്രങ്ങളും സധൈര്യം ഉയർന്നു വന്നതെന്നും പ്രധാനമന്ത്രി#NarendraModi #trinidadandtobago https://t.co/HCNsxM3I81 — News18 Kerala (@News18Kerala) July 5, 2025 2025-07-05T12:01:16+00:00 News18Kerala",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 1.6668767557348474e-06,
+    "prob_neutral": 0.9999855756759644,
+    "prob_positive": 1.2788806998287328e-05
   },
   {
     "text": "**news / Twitter Search** @CharlieK_news pic.twitter.com/asmPSNb6Eb — Leona Anderson (@LeonaLanderson) July 5, 2025 2025-07-05T12:01:16+00:00 LeonaLanderson",
-    "dominant_sentiment": "NEUTRAL"
+    "predicted_label": "NEUTRAL",
+    "prob_negative": 7.468429430446122e-06,
+    "prob_neutral": 0.9999799728393555,
+    "prob_positive": 1.250533478014404e-05
   }
 ]

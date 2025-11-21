@@ -1,0 +1,17 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+# If scraper has separate requirements:
+# COPY scrapper/twitter-scrapper-main/requirements.txt .
+# RUN pip install --no-cache-dir -r requirements.txt
+
+# Otherwise reuse root requirements:
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY scrapper/twitter-scrapper-main/ /app/
+
+# If you use pyppeteer, optionally download Chromium once:
+# RUN python - <<'PY'\nfrom pyppeteer import chromium_downloader as c; c.download_chromium()\nPY
+
+CMD ["python", "app.py"]

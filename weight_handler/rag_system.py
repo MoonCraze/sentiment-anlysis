@@ -692,10 +692,15 @@ def rag_explain(coin: str) -> Dict[str, Any]:
     neg_pct = float(v.get("twitter_neg_pct", 0.0))
     mode = sb.get("_mode", "static-weights")
 
+    raw_score = float(v.get("score", 0.0))
+    scaled_score = round(raw_score * 100.0, 4)
+
+    twf= round(tw * 100.0, 4)
+
     return {
         "coin": c,
         "found": True,
-        "score": v.get("score", 0.0),
+        "score": scaled_score ,
         "why": ", ".join(why) or "no strong signals",
         "mode": mode,
         "evidence": v.get("evidence", 0),
@@ -708,7 +713,7 @@ def rag_explain(coin: str) -> Dict[str, Any]:
             "total": tot,
             "pos_pct": pos_pct,
             "neg_pct": neg_pct,
-            "shrunk_sentiment": tw
+            "shrunk_sentiment": twf
         },
         "raw": v
     }

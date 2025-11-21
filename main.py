@@ -150,7 +150,17 @@ async def rag_get_explain(coin: str = Query(..., description="Coin or ticker e.g
     build_rag_index()
     if not rag_top(1):
         build_rag_index()
-    return rag_explain(coin)
+    explain = rag_explain(coin)
+
+    # 5) Attach the raw texts from this sentiment run directly into the response
+    #    (available_coin_search returns "sample_texts" in both scraper and SocialData versions)
+    explain["sample_texts"] = result.get("sample_texts", [])
+
+    # If in the future your available_coin_search returns more fields (e.g. sample_tweets with URLs),
+    # you can also expose them here:
+    # explain["sample_tweets"] = result.get("sample_tweets", [])
+
+    return explain
 
 if __name__ == "__main__":
     uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)

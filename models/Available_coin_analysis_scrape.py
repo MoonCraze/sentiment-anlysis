@@ -133,12 +133,19 @@ async def available_coin_search(query: str, max_results: int = 300) -> Dict[str,
 
     total = len(real_texts)
     pos = neg = neu = 0
+    positive_texts: List[str] = []
+    negative_texts: List[str] = []
+
     if vader_ok:
         sia = SentimentIntensityAnalyzer()
         for s in real_texts:
             c = sia.polarity_scores(s)["compound"]
-            if c > POS_THRESH: pos += 1
-            elif c < NEG_THRESH: neg += 1
+            if c > POS_THRESH:
+                 pos += 1
+                 positive_texts.append(s)
+            elif c < NEG_THRESH:
+                neg += 1
+                negative_texts.append(s)
             else: neu += 1
     else:
         neu = total
@@ -147,6 +154,37 @@ async def available_coin_search(query: str, max_results: int = 300) -> Dict[str,
     bar_b64 = _mk_bar_b64(pos, neg, total)
     pos_pct = round(100 * pos / total, 2) if total else 0.0
     neg_pct = round(100 * neg / total, 2) if total else 0.0
+
+    max_samples_per_class = 5
+
+    sample_items: List[Dict[str, Any]] = []
+
+    # positive samples (green)
+    for t in positive_texts[:max_samples_per_class]:
+        sample_items.append({
+            "text": t,                 # full_text already handled upstream
+            "sentiment": "positive",
+            "color": "green",          # frontend can map this to style / class
+        })
+
+    # negative samples (red)
+    for t in negative_texts[:max_samples_per_class]:
+        sample_items.append({
+            "text": t,
+            "sentiment": "negative",
+            "color": "red",
+        })
+
+    # If absolutely nothing was found, still return a small debug note
+    if not sample_items and not clean_texts:
+        sample_items.append({
+            "text": "No tweets found for this query.",
+            "sentiment": "none",
+            "color": "gray",
+        })
+
+
+
 
     return {
         "query": query,
@@ -157,7 +195,7 @@ async def available_coin_search(query: str, max_results: int = 300) -> Dict[str,
         "positive_pct": pos_pct,
         "negative_pct": neg_pct,
         "bar_image_base64": bar_b64,
-        "sample_texts": real_texts[:10],
+        "sample_texts": sample_items,
         "errors": errors,
         "diagnostics": diagnostics,
         "empty": total == 0,
